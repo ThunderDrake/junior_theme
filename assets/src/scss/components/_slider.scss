@@ -1,0 +1,44 @@
+.slider {
+  margin-bottom: 20px;
+
+  &__controlls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+  }
+
+  &__fraction {
+    position: static;
+    margin: 0 25px;
+    width: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--downriver-color);
+    pointer-events: none;
+  }
+
+  &__button {
+    position: static;
+    margin-top: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--downriver-color);
+
+    &::after {
+      content: none;
+    }
+
+    &--prev {
+      left: 40%;
+    }
+
+    &--next {
+      right: 40%;
+    }
+  }
+}

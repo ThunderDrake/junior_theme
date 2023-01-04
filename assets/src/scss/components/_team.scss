@@ -1,0 +1,38 @@
+.team {
+  margin-bottom: 80px;
+
+  &__wrapper {
+    border-radius: 40px;
+    padding: 60px 70px;
+    background-color: var(--light-color);
+
+    @include tablet {
+      padding: 60px 40px;
+    }
+
+    @include mobile {
+      padding: 60px 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: left;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-right: -20px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}

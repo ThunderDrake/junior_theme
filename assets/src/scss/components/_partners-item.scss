@@ -1,0 +1,13 @@
+.partners-item {
+  &__image {
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__image-image {
+    width: auto;
+  }
+}

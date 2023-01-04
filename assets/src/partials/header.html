@@ -1,0 +1,47 @@
+@if (context.inner === true) {
+<header class="header header--inner">
+}
+@if (!context.inner === true) {
+  <header class="header">
+
+}
+  <div class="container header__container">
+    <div class="logo header__logo">
+      <img loading="lazy" src="img/logo.svg" class="log__image" width="100" height="128" alt="ФК Джуниор логотип школы">
+    </div>
+    <button class="burger header__burger btn-reset" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__text">Меню</span>
+      <span class="burger__lines"></span>
+    </button>
+  </div>
+</header>
+<div class="navigation" data-menu>
+  <div class="navigation__container container">
+    <nav class="navigation__nav nav" title="Навигация по сайту">
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="/#info" class="nav__link" data-menu-item>Цели и принципы</a></li>
+        <li class="nav__item"><a href="/#advantages" class="nav__link" data-menu-item>Преимущества</a></li>
+        <li class="nav__item"><a href="/#team" class="nav__link" data-menu-item>Наша команда</a></li>
+        <li class="nav__item"><a href="/#news" class="nav__link" data-menu-item>Новости</a></li>
+        <li class="nav__item"><a href="/#production" class="nav__link" data-menu-item>Продукция</a></li>
+        <li class="nav__item"><a href="/#schedule" class="nav__link" data-menu-item>Расписание</a></li>
+        <li class="nav__item"><a href="/#reviews" class="nav__link" data-menu-item>Отзывы</a></li>
+        <li class="nav__item"><a href="/#contacts" class="nav__link" data-menu-item>Контакты</a></li>
+        <li class="nav__item"><a href="/#faq" class="nav__link" data-menu-item>Вопросы и ответы</a></li>
+        <li class="nav__item"><a href="/comands-single.html" class="nav__link" data-menu-item>Сборные команды клуба</a></li>
+      </ul>
+    </nav>
+    <div class="navigation__contacts">
+      <div class="navigation__contacts-group">
+        <div class="navigation__contacts-label">Телефон:</div>
+        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="tel:88001017943"><span data-text="8 (800) 101-79-43">8 (800) 101-79-43</span></a>
+        <a class="navigation__contacts-item hover-gradient" href="tel:+7 (383) 380-31-11"><span data-text="+7 (383) 380-31-11">+7 (383) 380-31-11</span></a>
+        <a class="navigation__contacts-item hover-gradient" href="tel:+7 (952) 911-91-11"><span data-text="+7 (952) 911-91-11">+7 (952) 911-91-11</span></a>
+      </div>
+      <div class="navigation__contacts-group">
+        <div class="navigation__contacts-label">Почта:</div>
+        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="mail:juniornsk@bk.ru"><span data-text="juniornsk@bk.ru">juniornsk@bk.ru</span></a>
+      </div>
+    </div>
+  </div>
+</div>

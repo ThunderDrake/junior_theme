@@ -1,0 +1,115 @@
+.step {
+  position: relative;
+  border-radius: 40px;
+  padding: 40px;
+  background: var(--light-color);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 59px;
+  }
+
+  &__label {
+    z-index: 3;
+    border-radius: 300px;
+    padding: 1em 2em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background: linear-gradient(289.54deg, #0b4c8e 10.43%, #23a4db 96.95%);
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: -0.02em;
+
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  &__descr {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  &__full-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 40px;
+    padding: 40px;
+    background: linear-gradient(289.54deg, #0b4c8e 10.43%, #23a4db 96.95%);
+    opacity: 0;
+    visibility: hidden;
+
+    p {
+      margin: 0;
+      color: var(--light-color);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--large {
+    grid-column: span 6;
+
+    .step__descr {
+      max-width: 80%;
+
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+
+    @include small-tablet {
+      grid-column: span 13;
+    }
+  }
+
+  &--small {
+    grid-column: span 5;
+
+    @include small-tablet {
+      grid-column: span 13;
+    }
+  }
+}
+
+.step--active {
+  .step__full-info {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .step__label {
+    color: #23a4db;
+    background: linear-gradient(289.54deg, #fff 10.43%, #fff 96.95%);
+  }
+}

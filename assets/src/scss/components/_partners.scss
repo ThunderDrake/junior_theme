@@ -1,0 +1,25 @@
+.partners {
+  margin-bottom: 80px;
+
+  &__wrapper {
+    border-radius: 40px;
+    padding: 60px;
+    background: #fff;
+
+    @include small-tablet {
+      padding: 60px 40px;
+    }
+  }
+
+  &__slider-wrapper {
+    align-items: center;
+  }
+
+  &__item {
+    width: auto;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}

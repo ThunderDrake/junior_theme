@@ -1,0 +1,111 @@
+.info {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include mobile {
+      padding: 60px 0 60px 20px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 40px;
+    background-color: var(--light-color);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      background-color: transparent;
+      gap: 1px;
+    }
+
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-wrapper {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 25px 30px;
+
+      @include tablet {
+        border-radius: 40px;
+        padding: 30px;
+        background-color: var(--light-color);
+      }
+
+      @include mobile {
+        justify-content: space-between;
+      }
+    }
+
+    &-icon {
+      margin-bottom: 37px;
+    }
+
+    &-title {
+      display: flex;
+      max-width: 64%;
+      text-align: left;
+
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 135%;
+        letter-spacing: -0.01em;
+
+        &::before {
+          -webkit-text-fill-color: transparent;
+          background: linear-gradient(90deg, #062446 0, #062446 100%);
+          -webkit-background-clip: text;
+        }
+      }
+
+      @include small-desktop {
+        max-width: 100%;
+      }
+
+      @include tablet {
+        max-width: 70%;
+      }
+    }
+
+    @include mobile {
+      height: 200px;
+    }
+  }
+}
+
+.info .swiper-pagination,
+.info .swiper-button-prev,
+.info .swiper-button-next {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.info__wrapper .info__item:first-child .info__item-title {
+  max-width: 70%;
+
+  @include small-desktop {
+    max-width: 100%;
+  }
+
+  @include tablet {
+    max-width: 70%;
+  }
+}
+
+.info__wrapper .info__item:nth-child(3) .info__item-title {
+  max-width: 50%;
+}

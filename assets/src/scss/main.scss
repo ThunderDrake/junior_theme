@@ -1,0 +1,38 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/ui";
+@import "./components/choise-custom";
+@import "./components/slider";
+@import "./components/header";
+@import "./components/burger";
+@import "./components/navigation";
+@import "./components/nav";
+@import "./components/hero";
+@import "./components/info";
+@import "./components/why-us";
+@import "./components/advantages";
+@import "./components/form-section";
+@import "./components/form";
+@import "./components/steps";
+@import "./components/step";
+@import "./components/team";
+@import "./components/team-member";
+@import "./components/schedule";
+@import "./components/table-item";
+@import "./components/news";
+@import "./components/news-item";
+@import "./components/partners";
+@import "./components/partners-item";
+@import "./components/reviews";
+@import "./components/review-item";
+@import "./components/faq";
+@import "./components/products";
+@import "./components/contacts";
+@import "./components/comand-hero";
+@import "./components/comand-content";
+@import "./components/footer";

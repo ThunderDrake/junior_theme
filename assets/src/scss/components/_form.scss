@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__label {
+    flex: 100%;
+    margin-bottom: 10px;
+
+    &--50 {
+      flex: 48%;
+
+      @include mobile {
+        flex: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__input {
+    outline: 1px solid transparent;
+    border-radius: 300px;
+    padding: 22px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: var(--venice-blue-color);
+    background: var(--alabaster-gray);
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid var(--curious-blue-color);
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .just-validate-error-field {
+    outline: 1px solid #f00;
+  }
+
+  &__btn {
+    flex: initial;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+}

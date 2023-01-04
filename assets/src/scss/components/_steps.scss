@@ -1,0 +1,83 @@
+.steps {
+  margin-bottom: 80px;
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    margin-bottom: 50px;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 30%;
+      top: -55px;
+      z-index: 1;
+      width: 200px;
+      height: 200px;
+      background-image: url("../img/steps-decor-1.svg");
+      transform: rotate(30.05deg);
+      pointer-events: none;
+
+      @media (max-width: 1200px) {
+        left: 25%;
+      }
+
+      /* stylelint-disable-next-line order/order */
+      @include small-tablet {
+        left: 55%;
+      }
+
+      @include mobile {
+        left: auto;
+        right: -18%;
+        top: 16%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: 42%;
+      z-index: 1;
+      width: 322px;
+      height: 322px;
+      background-image: url("../img/steps-decor-2.svg");
+      pointer-events: none;
+
+      @media (max-width: 1200px) {
+        right: -100px;
+        top: 40%;
+      }
+
+      /* stylelint-disable-next-line order/order */
+      @include small-tablet {
+        right: -115px;
+        top: auto;
+        bottom: 4%;
+      }
+
+      @include mobile {
+        right: -185px;
+        bottom: 8%;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 3000px;
+    padding: 40px 100px;
+    width: max-content;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+}

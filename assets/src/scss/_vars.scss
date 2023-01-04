@@ -1,0 +1,33 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+@import "mixins";
+
+:root {
+  // base
+  --font-family-main: "Manrope", sans-serif;
+  --font-family-second: "AmericanCaptain", sans-serif;
+  --content-width: 1320px;
+  --container-offset: 40px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --curious-blue-color: #23a4db;
+  --venice-blue-color: #0b4c8e;
+  --downriver-color: #062446;
+  --starship-color: #d3f059;
+  --dusty-gray: #999;
+  --alabaster-gray: #f9f9f9;
+  --alto-gray: #d5d5d5;
+
+  // gradients
+  --gradient-blue: linear-gradient(289.54deg, #0b4c8e 10.43%, #23a4db 96.95%);
+
+  // fonts
+  --default-text: 400 16px / 135% var(--font-family-main);
+  --default-lg-text: 500 18px / 135% var(--font-family-main);
+
+  @include mobile {
+    --container-offset: 20px;
+  }
+}

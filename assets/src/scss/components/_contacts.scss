@@ -1,0 +1,134 @@
+.contacts-section {
+  margin-bottom: 80px;
+
+  &__title {
+    @include tablet {
+      grid-column: span 2;
+    }
+
+    @include mobile {
+      grid-column: auto;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    column-gap: 180px;
+    grid-template-columns: min-content 290px 290px;
+    margin-bottom: 60px;
+
+    @include small-desktop {
+      column-gap: 5%;
+      grid-template-columns: min-content 1fr 1fr;
+    }
+
+    @include tablet {
+      column-gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: none;
+    }
+  }
+
+  &__column {
+    height: 100%;
+  }
+
+  &__contacts {
+    height: 100%;
+
+    .navigation__contacts-label {
+      color: #999;
+    }
+
+    .navigation__contacts-item {
+      color: #062446;
+    }
+
+    .hover-gradient span {
+      display: block;
+    }
+
+    .hover-gradient span::before {
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(90deg, #062446 0, #062446 100%);
+      -webkit-background-clip: text;
+    }
+
+    &--address {
+      @include mobile {
+        max-width: 70%;
+      }
+    }
+
+    @include tablet {
+      .navigation__contacts-item--big {
+        font-size: 1.65em;
+      }
+    }
+
+    @include mobile {
+      .navigation__contacts-group {
+        margin-bottom: 40px;
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__address {
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__socials {
+    margin-top: auto;
+    margin-bottom: 0;
+
+    &-link {
+      margin-right: 10px;
+
+      &:hover {
+        stop:first-child {
+          stop-color: #0b4c8e;
+        }
+
+        stop:last-child {
+          stop-color: #23a4db;
+        }
+      }
+    }
+
+    &-icon {
+      stop {
+        transition: 0.4s ease;
+      }
+
+      @include mobile {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  &__map {
+    overflow: hidden;
+    border-radius: 40px;
+    height: 425px;
+
+    .ymaps-layers-pane {
+      -webkit-filter: grayscale(1);
+    }
+
+    &-block {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}

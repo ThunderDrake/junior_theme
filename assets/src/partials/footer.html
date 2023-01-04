@@ -1,0 +1,273 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__content-wrapper">
+      <div class="footer__logo logo">
+        <img loading="lazy" src="img/logo.svg" class="log__image" width="100" height="128" alt="ФК Джуниор логотип школы">
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list list-reset">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#info"><span data-text="Цели и принципы">Цели и принципы</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#advantages"><span data-text="Преимущества">Преимущества</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#team"><span data-text="Наша команда">Наша команда</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#news"><span data-text="Новости">Новости</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#production"><span data-text="Продукция">Продукция</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list list-reset">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#schedule"><span data-text="Расписание">Расписание</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#reviews"><span data-text="Отзывы">Отзывы</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#contacts"><span data-text="Контакты">Контакты</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#faq"><span data-text="Вопросы и ответы">Вопросы и ответы</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/comands-single.html"><span data-text="Сборные команды клуба">Сборные команды клуба</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <div class="footer__legal-title">Наши реквизиты</div>
+        <p class="footer__legal-content">
+          ИП Новоградская Ксения Игоревна<br>
+          ОГРНИП: 318547600003968<br>
+          ИНН: 544600140013<br>
+          Банк: МОСКОВСКИЙ ФИЛИАЛ АО КБ «МОДУЛЬБАНК»<br>
+          БИК: 044525092<br>
+          к/с №: 30101810645250000092<br>
+          Счёт №: 40802810370010063330
+        </p>
+      </div>
+      <div class="footer__additional">
+        <div class="footer__credits">ДФЦ Джуниор © 2022 </div>
+        <a class="footer__policy hover-gradient" href="/policy.pdf/"><span data-text="Политика конфиденциальности">Политика конфиденциальности</span></a>
+        <div class="footer__authors">
+          <a class="footer__authors-link hover-gradient" href="/"><span data-text="Дизайн">Дизайн</span></a> и <a class="footer__authors-link hover-gradient" href="/"><span data-text="разработка">разработка</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU&amp;apikey=b73c0e8a-498f-418c-be32-cf873e56b1fe"></script>
+<script type="text/javascript">
+  /*<![CDATA[*/
+
+  if(document.querySelector('#map')) {
+    ymaps.ready(init);
+        var myMap;
+        function init() {
+				myMap = new ymaps.Map('map', {
+					center: [55.050107, 82.941280],
+					behaviors: ['default'],
+					zoom: 16,
+					scroll: false
+				});
+
+				myMap.controls.add('zoomControl', {left: 5, top: 5});
+
+				var myCollection = new ymaps.GeoObjectCollection();
+
+				let myPlacemark0 = new ymaps.Placemark([55.050107, 82.941280], {
+			}, {
+				iconImageHref: './img/map-marker.png',
+				iconImageSize: [30, 40],
+				iconImageOffset: [-15, -40],
+			}); let myPlacemark1 = new ymaps.Placemark([55.054392, 82.920735], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark2 = new ymaps.Placemark([55.056001, 82.98068], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark3 = new ymaps.Placemark([54.988897, 82.901879], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark4 = new ymaps.Placemark([54.983876, 82.815183], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark5 = new ymaps.Placemark([55.039435, 83.003506], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark6 = new ymaps.Placemark([55.002041, 82.953928], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+				}); let myPlacemark7 = new ymaps.Placemark([54.94021, 83.119424], {
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark8 = new ymaps.Placemark([55.024605, 82.942726], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark9 = new ymaps.Placemark([54.925101, 82.997631], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark10 = new ymaps.Placemark([54.772063, 83.073431], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark11 = new ymaps.Placemark([54.935022, 82.899104], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark12 = new ymaps.Placemark([55.087836, 83.046284], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark13 = new ymaps.Placemark([54.965864, 82.842141], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark14 = new ymaps.Placemark([55.06851, 82.913342], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark15 = new ymaps.Placemark([54.860601, 83.093795], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark16 = new ymaps.Placemark([55.113529, 82.933743], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark17 = new ymaps.Placemark([55.06685, 82.925002], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark18 = new ymaps.Placemark([54.999139, 83.012085], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark19 = new ymaps.Placemark([54.97793, 83.055464], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark20 = new ymaps.Placemark([54.995973, 82.692527], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark21 = new ymaps.Placemark([55.072721, 82.946157], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark22 = new ymaps.Placemark([55.019346, 83.009749], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark23 = new ymaps.Placemark([55.049323, 82.929664], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark24 = new ymaps.Placemark([55.04889, 82.955419], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark25 = new ymaps.Placemark([55.027882, 82.961339], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				}); let myPlacemark26 = new ymaps.Placemark([54.954393, 82.959857], {
+
+				}, {
+					iconImageHref: './img/map-marker.png',
+					iconImageSize: [30, 40],
+					iconImageOffset: [-15, -40],
+
+				});
+				myCollection.add(myPlacemark0).add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4).add(myPlacemark5).add(myPlacemark6).add(myPlacemark7).add(myPlacemark8).add(myPlacemark9).add(myPlacemark10).add(myPlacemark11).add(myPlacemark12).add(myPlacemark13).add(myPlacemark14).add(myPlacemark15).add(myPlacemark16).add(myPlacemark17).add(myPlacemark18).add(myPlacemark19).add(myPlacemark20).add(myPlacemark21).add(myPlacemark22).add(myPlacemark23).add(myPlacemark24).add(myPlacemark25).add(myPlacemark26);
+
+				myMap.geoObjects.add(myCollection);
+				myMap.setBounds(myCollection.getBounds());
+			}
+      }
+  </script>

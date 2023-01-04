@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/info.html')
+      @include('partials/why-us.html')
+      @include('partials/advantages.html')
+      @include('partials/form.html', {"revert": false})
+      @include('partials/steps.html')
+      @include('partials/team.html')
+      @include('partials/schedule.html')
+      @include('partials/form.html', {"revert": true})
+      @include('partials/news.html')
+      @include('partials/partners.html')
+      @include('partials/reviews.html')
+      @include('partials/faq.html')
+      @include('partials/products.html')
+      @include('partials/contacts.html')
+    </main>
+    @include('partials/modals.html')
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

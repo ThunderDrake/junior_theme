@@ -1,0 +1,89 @@
+.form__label .choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.form__label .choices__inner {
+  outline: 1px solid transparent;
+  border: none !important;
+  border-radius: 300px !important;
+  padding: 22px;
+  padding-bottom: 22px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--venice-blue-color);
+  background: var(--alabaster-gray);
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid var(--curious-blue-color);
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.form__label .choices__inner .choices__list {
+  padding: 0;
+}
+
+.form__label .choices__inner .choices__placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form__label .choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 22px;
+}
+
+.form__label .choices[data-type*="select-one"]::after {
+  border: none;
+  width: 8px;
+  height: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4 4L7 1' stroke='%23062446'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__label .choices[data-type*="select-one"].is-open::after {
+  margin-top: -2.5px;
+  transform: rotate(180deg);
+}
+
+.form__label .is-open .choices__list--dropdown {
+  margin-top: 10px;
+  border-color: transparent;
+  border-radius: 40px;
+  padding: 22px;
+  background: #f9f9f9;
+}
+
+.form__label .choices__list--dropdown .choices__item--selectable {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #999;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.form__label .choices__list--dropdown .choices__item--selectable.is-highlighted {
+  color: #0b4c8e;
+  background-color: #f9f9f9;
+}
+
+.form__label .choices__list--dropdown .choices__item--selectable.is-highlighted::after {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .form__label .choices__list--dropdown .choices__item--selectable {
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,55 @@
+<section class="form-section">
+  @if (context.revert === true) {
+    <div class="form-section__container form-section__container--revert container">
+  }
+  @if (!context.revert === true) {
+    <div class="form-section__container container">
+  }
+    <div class="form-section__image">
+      @if (!context.revert === true) {
+        <picture>
+          <source srcset="img/form-section/form-section__image-1.webp" type="image/webp">
+          <img loading="lazy" src="img/form-section/form-section__image-1.jpg" class="form-section__image-image" width="660" height="660" alt="Дети тренируются на футбольном поле">
+        </picture>
+      }
+      @if (context.revert === true) {
+        <picture>
+          <source srcset="img/form-section/form-section__image-2.webp" type="image/webp">
+          <img loading="lazy" src="img/form-section/form-section__image-2.jpg" class="form-section__image-image" width="660" height="660" alt="Дети тренируются на футбольном поле">
+        </picture>
+      }
+    </div>
+    <div class="form-section__content">
+      <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>
+      <form action="#" class="form-section__form form" id="first-form">
+        <label class="form__label">
+          <input type="text" name="Name" class="input-reset form__input form__input--name" placeholder="Имя ребенка">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="Phone" class="input-reset form__input form__input--phone" placeholder="+7 (999) 999-99-99">
+        </label>
+        <label class="form__label form__label--50 mr-10">
+          <select name="Year" class="input-reset form__input form__input--year custom-select" data-placeholder="Год рождения">
+            <option value="">Год рождения</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+          </select>
+        </label>
+        <label class="form__label form__label--50">
+          <select name="Place" class="input-reset form__input form__input--place custom-select" data-placeholder="Место тренировки">
+            <option value="">Место тренировки</option>
+            <option value="Место 1">Место 1</option>
+            <option value="Место 2">Место 2</option>
+            <option value="Место 3">Место 3</option>
+            <option value="Место 4">Место 4</option>
+            <option value="Место 5">Место 5</option>
+          </select>
+        </label>
+        <button class="btn-reset form__btn gradient-button">Записаться</button>
+      </form>
+    </div>
+  </div>
+</section>

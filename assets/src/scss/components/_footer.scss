@@ -1,0 +1,219 @@
+.footer {
+  &__container {
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__content-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+    padding: 60px 60px 18px;
+    background: linear-gradient(289.54deg, #0b4c8e 10.43%, #23a4db 96.95%);
+
+    @media (max-width: 810px) {
+      padding: 60px 40px 18px;
+    }
+
+    /* stylelint-disable-next-line order/order */
+    @include mobile {
+      padding: 40px 40px 18px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -24%;
+        top: 30px;
+        width: 320px;
+        height: 320px;
+        background-image: url("../img/nav__big-ball-decor.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(-35.82deg);
+        pointer-events: none;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -13%;
+        bottom: 6%;
+        width: 145px;
+        height: 145px;
+        background-image: url("../img/nav__ball-decor.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(-35.82deg);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__menu {
+    &-link {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 135%;
+      letter-spacing: -0.02em;
+      color: #fff;
+
+      span {
+        display: block;
+      }
+
+      @media (max-width: 810px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 700px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__logo {
+    margin-right: 100px;
+
+    @media (max-width: 810px) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+      margin-right: 20px;
+      width: 60px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 700px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__col {
+    margin-right: 20px;
+    width: 245px;
+
+    @media (max-width: 810px) {
+      margin-right: 0;
+      width: 210px;
+    }
+  }
+
+  &__legal {
+    margin-right: 0;
+    margin-left: auto;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 26px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      letter-spacing: -0.02em;
+      color: #fff;
+
+      @media (max-width: 700px) {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+
+    &-content {
+      margin: 0;
+      max-width: 235px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 135%;
+      letter-spacing: -0.02em;
+      color: #fff;
+
+      @media (max-width: 810px) {
+        max-width: 200px;
+      }
+    }
+
+    @media (max-width: 810px) {
+      margin-left: 0;
+    }
+  }
+
+  &__additional {
+    display: flex;
+    flex: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 72px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    @include mobile {
+      justify-content: flex-start;
+      font-size: 12px;
+    }
+
+    a {
+      font-weight: 900;
+      color: inherit;
+    }
+
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  &__credits {
+    margin-right: 58px;
+
+    @media (max-width: 810px) {
+      margin-right: auto;
+    }
+
+    @media (max-width: 700px) {
+      flex: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__authors {
+    margin-right: 0;
+    margin-left: auto;
+    width: 100%;
+    max-width: 235px;
+    text-align-last: left;
+
+    @media (max-width: 810px) {
+      width: auto;
+      max-width: none;
+    }
+
+    @include mobile {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
