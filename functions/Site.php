@@ -11,7 +11,7 @@ class Site {
 	private $static_url;
 
 	private function __construct() {
-		$this->static_url = esc_url( get_template_directory_uri() . '/static/build' );
+		$this->static_url = esc_url( get_template_directory_uri() . '/assets/app' );
 	}
 
 	public static function getInstance(): Site {

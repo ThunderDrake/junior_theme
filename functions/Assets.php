@@ -10,9 +10,9 @@ class Assets {
 
 	public function attach_assets() {
 		// HTML Love
-		$this->attach_style( '/static/build/css/style.min.css' );
-		$this->attach_script( '/static/build/js/vendor.min.js' );
-		$this->attach_script( '/static/build/js/main.min.js' );
+		$this->attach_style( '/assets/app/css/vendor.css' );
+		$this->attach_style( '/assets/app/css/main.css' );
+		$this->attach_script( '/assets/app/js/main.js' );
 
 		// Custom
 		$this->attach_style( '/custom/custom.css' );
