@@ -33,4 +33,5 @@ const afterForm = () => {
   console.log('Произошла отправка, тут можно писать любые действия');
 };
 
-validateForms('#first-form', rules1, afterForm);
+validateForms('#firstForm', rules1, afterForm);
+validateForms('#secondForm', rules1, afterForm);

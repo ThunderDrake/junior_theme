@@ -1301,7 +1301,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/validate-forms */ "./src/js/functions/validate-forms.js");
 
 const rules1 = [{
-  ruleSelector: '#first-form .form__input--name',
+  ruleSelector: '#firstForm .form__input--name',
   rules: [{
     rule: 'minLength',
     value: 3
@@ -1311,7 +1311,27 @@ const rules1 = [{
     errorMessage: 'Заполните имя!'
   }]
 }, {
-  ruleSelector: '#first-form .form__input--phone',
+  ruleSelector: '#firstForm .form__input--phone',
+  tel: true,
+  telError: 'Введите корректный телефон',
+  rules: [{
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните телефон!'
+  }]
+}];
+const rules2 = [{
+  ruleSelector: '#secondForm .form__input--name',
+  rules: [{
+    rule: 'minLength',
+    value: 3
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните имя!'
+  }]
+}, {
+  ruleSelector: '#secondForm .form__input--phone',
   tel: true,
   telError: 'Введите корректный телефон',
   rules: [{
@@ -1323,7 +1343,8 @@ const rules1 = [{
 const afterForm = () => {
   console.log('Произошла отправка, тут можно писать любые действия');
 };
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#first-form', rules1, afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#firstForm', rules1, afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#secondForm', rules2, afterForm);
 
 /***/ }),
 
