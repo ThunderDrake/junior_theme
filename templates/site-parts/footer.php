@@ -1,7 +1,7 @@
 <?php
 /* Шаблон футера сайта */
 ?>
-<?php ct()->template('modals.php') ?>
+<?php ct()->template('site-parts/modals.php') ?>
 <footer class="footer">
   <div class="container footer__container">
     <div class="footer__content-wrapper">
