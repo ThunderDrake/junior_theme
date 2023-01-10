@@ -11,16 +11,16 @@
           <div class="navigation__contacts-group">
             <div class="navigation__contacts-label">Телефон:</div>
             <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient"
-              href="tel:88001017943"><span data-text="8 (800) 101-79-43">8 (800) 101-79-43</span></a>
-            <a class="navigation__contacts-item hover-gradient" href="tel:+7 (383) 380-31-11"><span
-                data-text="+7 (383) 380-31-11">+7 (383) 380-31-11</span></a>
-            <a class="navigation__contacts-item hover-gradient" href="tel:+7 (952) 911-91-11"><span
-                data-text="+7 (952) 911-91-11">+7 (952) 911-91-11</span></a>
+              href="tel:<?= get_field('home_main_phone', 'option') ? cth()->format_phone(get_field('home_main_phone', 'option')) : '' ?>"><span data-text="<?= get_field('home_main_phone', 'option') ?: '' ?>"><?= get_field('home_main_phone', 'option') ?: '' ?></span></a>
+            <a class="navigation__contacts-item hover-gradient" href="tel:<?= get_field('home_main_phone_first', 'option') ? cth()->format_phone(get_field('home_main_phone_first', 'option')) : '' ?>"><span
+                data-text="<?= get_field('home_main_phone_first', 'option') ?: '' ?>"><?= get_field('home_main_phone_first', 'option') ?: '' ?></span></a>
+            <a class="navigation__contacts-item hover-gradient" href="tel:<?= get_field('home_main_phone_second', 'option') ? cth()->format_phone(get_field('home_main_phone_second', 'option')) : '' ?>"><span
+                data-text="<?= get_field('home_main_phone_second', 'option') ?: '' ?>"><?= get_field('home_main_phone_second', 'option') ?: '' ?></span></a>
           </div>
           <div class="navigation__contacts-group">
             <div class="navigation__contacts-label">Почта:</div>
             <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient"
-              href="mail:juniornsk@bk.ru"><span data-text="juniornsk@bk.ru">juniornsk@bk.ru</span></a>
+              href="mail:juniornsk@bk.ru"><span data-text="<?= get_field('home_email', 'option') ?: '' ?>"><?= get_field('home_email', 'option') ?: '' ?></span></a>
           </div>
         </div>
       </div>
@@ -28,10 +28,10 @@
         <div class="navigation__contacts-group contacts-section__contacts contacts-section__contacts--address">
           <div class="navigation__contacts-label">Адрес:</div>
           <a class="navigation__contacts-item hover-gradient contacts-section__address" href="/"><span
-              data-text="Новосибирск, улица Писарева 102, офис 417 (БЦ Парус)">Новосибирск, улица Писарева 102, офис
-              417 (БЦ Парус)</span></a>
+              data-text="<?= get_field('home_address', 'option') ?: '' ?>"><?= get_field('home_address', 'option') ?: '' ?></span></a>
           <div class="contacts-section__socials">
-            <a class="contacts-section__socials-link" href="/">
+            <?php if(get_field('home_social_vk', 'option')): ?>
+            <a class="contacts-section__socials-link" href="<?= get_field('home_social_vk', 'option') ?: '' ?>">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="contacts-section__socials-icon">
                 <g clip-path="url(#clip0_407_4805)">
@@ -57,7 +57,9 @@
                 </defs>
               </svg>
             </a>
-            <a class="contacts-section__socials-link" href="/">
+            <?php endif; ?>
+            <?php if(get_field('home_social_youtube', 'option')): ?>
+            <a class="contacts-section__socials-link" href="<?= get_field('home_social_youtube', 'option') ?>">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="contacts-section__socials-icon">
                 <g clip-path="url(#clip0_723_4401)">
@@ -83,6 +85,7 @@
                 </defs>
               </svg>
             </a>
+            <?php endif; ?>
           </div>
         </div>
       </div>

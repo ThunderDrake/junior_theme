@@ -21,13 +21,13 @@
     <div class="navigation__contacts">
       <div class="navigation__contacts-group">
         <div class="navigation__contacts-label">Телефон:</div>
-        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="tel:88001017943"><span data-text="8 (800) 101-79-43">8 (800) 101-79-43</span></a>
-        <a class="navigation__contacts-item hover-gradient" href="tel:+7 (383) 380-31-11"><span data-text="+7 (383) 380-31-11">+7 (383) 380-31-11</span></a>
-        <a class="navigation__contacts-item hover-gradient" href="tel:+7 (952) 911-91-11"><span data-text="+7 (952) 911-91-11">+7 (952) 911-91-11</span></a>
+        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="tel:<?= get_field('home_main_phone', 'option') ? cth()->format_phone(get_field('home_main_phone', 'option')) : '' ?>"><span data-text="<?= get_field('home_main_phone', 'option') ?: '' ?>"><?= get_field('home_main_phone', 'option') ?: '' ?></span></a>
+        <a class="navigation__contacts-item hover-gradient" href="tel:<?= get_field('home_main_phone_first', 'option') ? cth()->format_phone(get_field('home_main_phone_first', 'option')) : '' ?>"><span data-text="<?= get_field('home_main_phone_first', 'option') ?: '' ?>"><?= get_field('home_main_phone_first', 'option') ?: '' ?></span></a>
+        <a class="navigation__contacts-item hover-gradient" href="tel:<?= get_field('home_main_phone_second', 'option') ? cth()->format_phone(get_field('home_main_phone_second', 'option')) : '' ?>"><span data-text="<?= get_field('home_main_phone_second', 'option') ?: '' ?>"><?= get_field('home_main_phone_second', 'option') ?: '' ?></span></a>
       </div>
       <div class="navigation__contacts-group">
         <div class="navigation__contacts-label">Почта:</div>
-        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="mail:juniornsk@bk.ru"><span data-text="juniornsk@bk.ru">juniornsk@bk.ru</span></a>
+        <a class="navigation__contacts-item navigation__contacts-item--big hover-gradient" href="mail:<?= get_field('home_email', 'option') ?: '' ?>"><span data-text="<?= get_field('home_email', 'option') ?: '' ?>"><?= get_field('home_email', 'option') ?: '' ?></span></a>
       </div>
     </div>
   </div>

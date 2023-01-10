@@ -1,0 +1,168 @@
+{
+    "key": "group_home_options",
+    "title": "Общие настройки сайта",
+    "fields": [
+        {
+            "key": "field_63b8b0f711a34",
+            "label": "Главный телефон для связи",
+            "name": "home_main_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "+7(999)999-99-99",
+            "prepend": "Введите номер телефона для связи",
+            "append": "",
+            "maxlength": 20
+        },
+        {
+            "key": "field_63b8b1b311a35",
+            "label": "Дополнительный телефон для связи",
+            "name": "home_main_phone_first",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "+7(999)999-99-99",
+            "prepend": "Введите номер телефона для связи",
+            "append": "",
+            "maxlength": 20
+        },
+        {
+            "key": "field_63b8b1da11a36",
+            "label": "Дополнительный телефон для связи",
+            "name": "home_main_phone_second",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "+7(999)999-99-99",
+            "prepend": "Введите номер телефона для связи",
+            "append": "",
+            "maxlength": 20
+        },
+        {
+            "key": "field_63b8b1e411a37",
+            "label": "E-mail для связи",
+            "name": "home_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "mail@mail.ru",
+            "prepend": "Введите адрес почты для связи",
+            "append": ""
+        },
+        {
+            "key": "field_63b8b22211a38",
+            "label": "Адрес компании",
+            "name": "home_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "Введите действующий адрес офиса для работы с клиентами",
+            "append": "",
+            "maxlength": 60
+        },
+        {
+            "key": "field_63b8b25911a39",
+            "label": "Ссылки на соц.сети",
+            "name": "home_socials",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63b8cdc611a3a",
+                    "label": "Ютуб",
+                    "name": "youtube",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63b8cdd811a3b",
+                    "label": "Вконтакте",
+                    "name": "vk",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1673055719
+}
