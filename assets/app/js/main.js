@@ -945,30 +945,30 @@ var updateCount = function (n) {
 
 /***/ }),
 
-/***/ "./src/js/_components.js":
-/*!*******************************!*\
-  !*** ./src/js/_components.js ***!
-  \*******************************/
+/***/ "./assets/src/js/_components.js":
+/*!**************************************!*\
+  !*** ./assets/src/js/_components.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
-/* harmony import */ var _components_info_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/info-slider.js */ "./src/js/components/info-slider.js");
-/* harmony import */ var _components_form_selectors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form-selectors.js */ "./src/js/components/form-selectors.js");
-/* harmony import */ var _components_form_validation_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-validation.js */ "./src/js/components/form-validation.js");
-/* harmony import */ var _components_steps_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/steps.js */ "./src/js/components/steps.js");
+/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger.js */ "./assets/src/js/components/burger.js");
+/* harmony import */ var _components_info_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/info-slider.js */ "./assets/src/js/components/info-slider.js");
+/* harmony import */ var _components_form_selectors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form-selectors.js */ "./assets/src/js/components/form-selectors.js");
+/* harmony import */ var _components_form_validation_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-validation.js */ "./assets/src/js/components/form-validation.js");
+/* harmony import */ var _components_steps_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/steps.js */ "./assets/src/js/components/steps.js");
 /* harmony import */ var _components_steps_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_steps_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_team_slider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/team-slider.js */ "./src/js/components/team-slider.js");
-/* harmony import */ var _components_team_modal_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/team-modal.js */ "./src/js/components/team-modal.js");
-/* harmony import */ var _components_schedule_selects_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/schedule-selects.js */ "./src/js/components/schedule-selects.js");
-/* harmony import */ var _components_news_slider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/news-slider.js */ "./src/js/components/news-slider.js");
-/* harmony import */ var _components_partners_slider_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/partners-slider.js */ "./src/js/components/partners-slider.js");
-/* harmony import */ var _components_review_slider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/review-slider.js */ "./src/js/components/review-slider.js");
-/* harmony import */ var _components_faq_accordion_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/faq-accordion.js */ "./src/js/components/faq-accordion.js");
+/* harmony import */ var _components_team_slider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/team-slider.js */ "./assets/src/js/components/team-slider.js");
+/* harmony import */ var _components_team_modal_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/team-modal.js */ "./assets/src/js/components/team-modal.js");
+/* harmony import */ var _components_schedule_selects_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/schedule-selects.js */ "./assets/src/js/components/schedule-selects.js");
+/* harmony import */ var _components_news_slider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/news-slider.js */ "./assets/src/js/components/news-slider.js");
+/* harmony import */ var _components_partners_slider_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/partners-slider.js */ "./assets/src/js/components/partners-slider.js");
+/* harmony import */ var _components_review_slider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/review-slider.js */ "./assets/src/js/components/review-slider.js");
+/* harmony import */ var _components_faq_accordion_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/faq-accordion.js */ "./assets/src/js/components/faq-accordion.js");
 /* harmony import */ var _components_faq_accordion_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_faq_accordion_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_products_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/products-slider.js */ "./src/js/components/products-slider.js");
-/* harmony import */ var _components_comands_tabs_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/comands-tabs.js */ "./src/js/components/comands-tabs.js");
+/* harmony import */ var _components_products_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/products-slider.js */ "./assets/src/js/components/products-slider.js");
+/* harmony import */ var _components_comands_tabs_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/comands-tabs.js */ "./assets/src/js/components/comands-tabs.js");
 
 
 
@@ -986,17 +986,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/_functions.js":
-/*!******************************!*\
-  !*** ./src/js/_functions.js ***!
-  \******************************/
+/***/ "./assets/src/js/_functions.js":
+/*!*************************************!*\
+  !*** ./assets/src/js/_functions.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
-/* harmony import */ var _functions_fix_fullheight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/fix-fullheight */ "./src/js/functions/fix-fullheight.js");
-/* harmony import */ var _functions_header_height__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/header-height */ "./src/js/functions/header-height.js");
+/* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./assets/src/js/functions/mobile-check.js");
+/* harmony import */ var _functions_fix_fullheight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/fix-fullheight */ "./assets/src/js/functions/fix-fullheight.js");
+/* harmony import */ var _functions_header_height__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/header-height */ "./assets/src/js/functions/header-height.js");
 /* harmony import */ var simplebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! simplebar */ "./node_modules/simplebar/dist/simplebar.esm.js");
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
@@ -1088,10 +1088,10 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 
 /***/ }),
 
-/***/ "./src/js/_vars.js":
-/*!*************************!*\
-  !*** ./src/js/_vars.js ***!
-  \*************************/
+/***/ "./assets/src/js/_vars.js":
+/*!********************************!*\
+  !*** ./assets/src/js/_vars.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1108,32 +1108,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/_vendor.js":
-/*!***************************!*\
-  !*** ./src/js/_vendor.js ***!
-  \***************************/
+/***/ "./assets/src/js/_vendor.js":
+/*!**********************************!*\
+  !*** ./assets/src/js/_vendor.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
+/* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./assets/src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _vendor_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/accordion.js */ "./src/js/vendor/accordion.js");
+/* harmony import */ var _vendor_accordion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/accordion.js */ "./assets/src/js/vendor/accordion.js");
 
 
 
 /***/ }),
 
-/***/ "./src/js/components/burger.js":
-/*!*************************************!*\
-  !*** ./src/js/components/burger.js ***!
-  \*************************************/
+/***/ "./assets/src/js/components/burger.js":
+/*!********************************************!*\
+  !*** ./assets/src/js/components/burger.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./src/js/functions/disable-scroll.js");
-/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll */ "./src/js/functions/enable-scroll.js");
+/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./assets/src/js/functions/disable-scroll.js");
+/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll */ "./assets/src/js/functions/enable-scroll.js");
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -1195,10 +1195,10 @@ const linkScroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default())();
 
 /***/ }),
 
-/***/ "./src/js/components/comands-tabs.js":
-/*!*******************************************!*\
-  !*** ./src/js/components/comands-tabs.js ***!
-  \*******************************************/
+/***/ "./assets/src/js/components/comands-tabs.js":
+/*!**************************************************!*\
+  !*** ./assets/src/js/components/comands-tabs.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1212,10 +1212,10 @@ if (tabSelector) {
 
 /***/ }),
 
-/***/ "./src/js/components/faq-accordion.js":
-/*!********************************************!*\
-  !*** ./src/js/components/faq-accordion.js ***!
-  \********************************************/
+/***/ "./assets/src/js/components/faq-accordion.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/components/faq-accordion.js ***!
+  \***************************************************/
 /***/ (() => {
 
 const accordions = document.querySelectorAll('.accordion');
@@ -1267,10 +1267,10 @@ accordions.forEach(el => {
 
 /***/ }),
 
-/***/ "./src/js/components/form-selectors.js":
-/*!*********************************************!*\
-  !*** ./src/js/components/form-selectors.js ***!
-  \*********************************************/
+/***/ "./assets/src/js/components/form-selectors.js":
+/*!****************************************************!*\
+  !*** ./assets/src/js/components/form-selectors.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1290,15 +1290,15 @@ if (customSelects.length) {
 
 /***/ }),
 
-/***/ "./src/js/components/form-validation.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/form-validation.js ***!
-  \**********************************************/
+/***/ "./assets/src/js/components/form-validation.js":
+/*!*****************************************************!*\
+  !*** ./assets/src/js/components/form-validation.js ***!
+  \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/validate-forms */ "./src/js/functions/validate-forms.js");
+/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/validate-forms */ "./assets/src/js/functions/validate-forms.js");
 
 const rules1 = [{
   ruleSelector: '#firstForm .form__input--name',
@@ -1348,10 +1348,10 @@ const afterForm = () => {
 
 /***/ }),
 
-/***/ "./src/js/components/info-slider.js":
-/*!******************************************!*\
-  !*** ./src/js/components/info-slider.js ***!
-  \******************************************/
+/***/ "./assets/src/js/components/info-slider.js":
+/*!*************************************************!*\
+  !*** ./assets/src/js/components/info-slider.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1376,10 +1376,10 @@ if (window.matchMedia("(max-width: 576px)").matches) {
 
 /***/ }),
 
-/***/ "./src/js/components/news-slider.js":
-/*!******************************************!*\
-  !*** ./src/js/components/news-slider.js ***!
-  \******************************************/
+/***/ "./assets/src/js/components/news-slider.js":
+/*!*************************************************!*\
+  !*** ./assets/src/js/components/news-slider.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1420,10 +1420,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](newsSlider, {
 
 /***/ }),
 
-/***/ "./src/js/components/partners-slider.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/partners-slider.js ***!
-  \**********************************************/
+/***/ "./assets/src/js/components/partners-slider.js":
+/*!*****************************************************!*\
+  !*** ./assets/src/js/components/partners-slider.js ***!
+  \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1457,10 +1457,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](partnersSlider
 
 /***/ }),
 
-/***/ "./src/js/components/products-slider.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/products-slider.js ***!
-  \**********************************************/
+/***/ "./assets/src/js/components/products-slider.js":
+/*!*****************************************************!*\
+  !*** ./assets/src/js/components/products-slider.js ***!
+  \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1511,10 +1511,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](newsSlider, {
 
 /***/ }),
 
-/***/ "./src/js/components/review-slider.js":
-/*!********************************************!*\
-  !*** ./src/js/components/review-slider.js ***!
-  \********************************************/
+/***/ "./assets/src/js/components/review-slider.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/components/review-slider.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1560,10 +1560,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](reviewsSlider,
 
 /***/ }),
 
-/***/ "./src/js/components/schedule-selects.js":
-/*!***********************************************!*\
-  !*** ./src/js/components/schedule-selects.js ***!
-  \***********************************************/
+/***/ "./assets/src/js/components/schedule-selects.js":
+/*!******************************************************!*\
+  !*** ./assets/src/js/components/schedule-selects.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1583,10 +1583,10 @@ if (scheduleSelect.length) {
 
 /***/ }),
 
-/***/ "./src/js/components/steps.js":
-/*!************************************!*\
-  !*** ./src/js/components/steps.js ***!
-  \************************************/
+/***/ "./assets/src/js/components/steps.js":
+/*!*******************************************!*\
+  !*** ./assets/src/js/components/steps.js ***!
+  \*******************************************/
 /***/ (() => {
 
 const steps = document.querySelectorAll('.step');
@@ -1604,10 +1604,10 @@ if (steps.length) {
 
 /***/ }),
 
-/***/ "./src/js/components/team-modal.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/team-modal.js ***!
-  \*****************************************/
+/***/ "./assets/src/js/components/team-modal.js":
+/*!************************************************!*\
+  !*** ./assets/src/js/components/team-modal.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1632,10 +1632,10 @@ const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]({
 
 /***/ }),
 
-/***/ "./src/js/components/team-slider.js":
-/*!******************************************!*\
-  !*** ./src/js/components/team-slider.js ***!
-  \******************************************/
+/***/ "./assets/src/js/components/team-slider.js":
+/*!*************************************************!*\
+  !*** ./assets/src/js/components/team-slider.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1677,10 +1677,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](teamSlider, {
 
 /***/ }),
 
-/***/ "./src/js/functions/disable-scroll.js":
-/*!********************************************!*\
-  !*** ./src/js/functions/disable-scroll.js ***!
-  \********************************************/
+/***/ "./assets/src/js/functions/disable-scroll.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/functions/disable-scroll.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1688,7 +1688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "disableScroll": () => (/* binding */ disableScroll)
 /* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./assets/src/js/_vars.js");
 
 const disableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
@@ -1706,10 +1706,10 @@ const disableScroll = () => {
 
 /***/ }),
 
-/***/ "./src/js/functions/enable-scroll.js":
-/*!*******************************************!*\
-  !*** ./src/js/functions/enable-scroll.js ***!
-  \*******************************************/
+/***/ "./assets/src/js/functions/enable-scroll.js":
+/*!**************************************************!*\
+  !*** ./assets/src/js/functions/enable-scroll.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1717,7 +1717,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "enableScroll": () => (/* binding */ enableScroll)
 /* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./assets/src/js/_vars.js");
 
 const enableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
@@ -1739,15 +1739,15 @@ const enableScroll = () => {
 
 /***/ }),
 
-/***/ "./src/js/functions/fix-fullheight.js":
-/*!********************************************!*\
-  !*** ./src/js/functions/fix-fullheight.js ***!
-  \********************************************/
+/***/ "./assets/src/js/functions/fix-fullheight.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/functions/fix-fullheight.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./throttle */ "./src/js/functions/throttle.js");
+/* harmony import */ var _throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./throttle */ "./assets/src/js/functions/throttle.js");
 
 const fixFullheight = () => {
   let vh = window.innerHeight;
@@ -1759,10 +1759,10 @@ window.addEventListener('resize', fixHeight);
 
 /***/ }),
 
-/***/ "./src/js/functions/header-height.js":
-/*!*******************************************!*\
-  !*** ./src/js/functions/header-height.js ***!
-  \*******************************************/
+/***/ "./assets/src/js/functions/header-height.js":
+/*!**************************************************!*\
+  !*** ./assets/src/js/functions/header-height.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1777,10 +1777,10 @@ const getHeaderHeight = () => {
 
 /***/ }),
 
-/***/ "./src/js/functions/mobile-check.js":
-/*!******************************************!*\
-  !*** ./src/js/functions/mobile-check.js ***!
-  \******************************************/
+/***/ "./assets/src/js/functions/mobile-check.js":
+/*!*************************************************!*\
+  !*** ./assets/src/js/functions/mobile-check.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1788,7 +1788,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "mobileCheck": () => (/* binding */ mobileCheck)
 /* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./assets/src/js/_vars.js");
 
 const mobileCheck = () => {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -1805,10 +1805,10 @@ const mobileCheck = () => {
 
 /***/ }),
 
-/***/ "./src/js/functions/throttle.js":
-/*!**************************************!*\
-  !*** ./src/js/functions/throttle.js ***!
-  \**************************************/
+/***/ "./assets/src/js/functions/throttle.js":
+/*!*********************************************!*\
+  !*** ./assets/src/js/functions/throttle.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1844,10 +1844,10 @@ const throttle = function (func) {
 
 /***/ }),
 
-/***/ "./src/js/functions/validate-forms.js":
-/*!********************************************!*\
-  !*** ./src/js/functions/validate-forms.js ***!
-  \********************************************/
+/***/ "./assets/src/js/functions/validate-forms.js":
+/*!***************************************************!*\
+  !*** ./assets/src/js/functions/validate-forms.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1912,10 +1912,10 @@ const validateForms = (selector, rules, afterSend) => {
 
 /***/ }),
 
-/***/ "./src/js/vendor/accordion.js":
-/*!************************************!*\
-  !*** ./src/js/vendor/accordion.js ***!
-  \************************************/
+/***/ "./assets/src/js/vendor/accordion.js":
+/*!*******************************************!*\
+  !*** ./assets/src/js/vendor/accordion.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1969,10 +1969,10 @@ class GraphAccordion {
 
 /***/ }),
 
-/***/ "./src/js/vendor/focus-visible.js":
-/*!****************************************!*\
-  !*** ./src/js/vendor/focus-visible.js ***!
-  \****************************************/
+/***/ "./assets/src/js/vendor/focus-visible.js":
+/*!***********************************************!*\
+  !*** ./assets/src/js/vendor/focus-visible.js ***!
+  \***********************************************/
 /***/ (() => {
 
 /**
@@ -34053,14 +34053,14 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
+/*!*******************************!*\
+  !*** ./assets/src/js/main.js ***!
+  \*******************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
+/* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./assets/src/js/_vendor.js");
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./assets/src/js/_vars.js");
+/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./assets/src/js/_functions.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./assets/src/js/_components.js");
 
 
 

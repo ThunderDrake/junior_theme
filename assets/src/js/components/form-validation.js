@@ -2,7 +2,7 @@ import { validateForms } from '../functions/validate-forms';
 
 const rules1 = [
   {
-    ruleSelector: '#first-form .form__input--name',
+    ruleSelector: '#firstForm .form__input--name',
     rules: [
       {
         rule: 'minLength',
@@ -16,7 +16,36 @@ const rules1 = [
     ]
   },
   {
-    ruleSelector: '#first-form .form__input--phone',
+    ruleSelector: '#firstForm .form__input--phone',
+    tel: true,
+    telError: 'Введите корректный телефон',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните телефон!'
+      }
+    ]
+  },
+];
+
+const rules2 = [
+  {
+    ruleSelector: '#secondForm .form__input--name',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 3
+      },
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните имя!'
+      }
+    ]
+  },
+  {
+    ruleSelector: '#secondForm .form__input--phone',
     tel: true,
     telError: 'Введите корректный телефон',
     rules: [
@@ -34,4 +63,4 @@ const afterForm = () => {
 };
 
 validateForms('#firstForm', rules1, afterForm);
-validateForms('#secondForm', rules1, afterForm);
+validateForms('#secondForm', rules2, afterForm);

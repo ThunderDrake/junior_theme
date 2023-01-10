@@ -2510,10 +2510,10 @@ a {
   -webkit-column-gap: 180px;
   -moz-column-gap: 180px;
   column-gap: 180px;
-  -ms-grid-columns: -webkit-min-content 290px 290px;
-  -ms-grid-columns: min-content 290px 290px;
-  grid-template-columns: -webkit-min-content 290px 290px;
-  grid-template-columns: min-content 290px 290px;
+  -ms-grid-columns: -webkit-min-content 310px 290px;
+  -ms-grid-columns: min-content 310px 290px;
+  grid-template-columns: -webkit-min-content 310px 290px;
+  grid-template-columns: min-content 310px 290px;
   margin-bottom: 60px;
 }
 @media (max-width: 1225px) {
