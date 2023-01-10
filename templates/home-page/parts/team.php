@@ -1,5 +1,16 @@
 <?php
 /* Секция Team */
+
+$pinned_member = get_pinned_member_post();
+$team_members = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'team',
+      'publish'     => true,
+  ]
+);
+$big_member_post_obj = $pinned_member ?: $team_members[0];
+$big_member_position_obj = wp_get_post_terms($big_member_post_obj->ID, 'position')[0];
 ?>
 
 <section class="team" id="team">
@@ -8,105 +19,47 @@
       <h2 class="team__title h2-title">Наша команда</h2>
       <div class="team__big-item team-member team-member--big">
         <div class="team-member__image">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-1.jpg"
-            class="team-member__image-image" width="590" height="590" alt="Новоградская Ксения Игоревна">
+          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 590, 'h' => 590, 'allow' => 'any', 'src' => get_the_post_thumbnail_url($big_member_post_obj) ], ) ?>"
+            class="team-member__image-image" width="590" height="590" alt="<?= $big_member_post_obj->post_title ?>">
         </div>
         <div class="team-member__content">
-          <div class="team-member__label">Директор</div>
-          <div class="team-member__title">Новоградская Ксения Игоревна</div>
+          <div class="team-member__label"><?= $big_member_position_obj->name ?></div>
+          <div class="team-member__title"><?= $big_member_post_obj->post_title ?></div>
           <div class="team-member__descr">
-            <p>
-              В футбол я пришла около шести лет назад (тогда работая в другом клубе).
-              Клубу Джуниор — четвертый год, за эти четыре года все клиенты нашей школы для меня стали словно родные
-              люди. А дети наших клиентов — словно это мои дети.
-              Я очень дорожу нашим великолепным коллективом и на столько счастлива, что все вместе мы смогли стать
-              школой НОМЕР ОДИН в Новосибирске! Наши одни из главных ценностей: открытость и вовлеченность.
-            </p>
-            <p>
-              Мы вегда говорим:<br>
-              «Все лучшее — детям!<br>
-              За качество отвечаем!»
-            </p>
-            <p>
-              И это действительно так! Приходите и сами все увидите!
-            </p>
+            <?= wpautop($big_member_post_obj->post_content) ?>
           </div>
         </div>
       </div>
       <div class="swiper team__slider slider">
         <div class="swiper-wrapper team__slider-wrapper slider__wrapper">
+          <?php
+          $team_members_filter = get_posts(
+            [
+                'numberposts' => -1,
+                'post_type'   => 'team',
+                'publish'     => true,
+                'exclude' => $big_member_post_obj->ID
+            ]
+          );
+
+          foreach($team_members_filter as $post):
+            setup_postdata( $post );
+          ?>
           <div class="swiper-slide team__item team-member slider__item">
             <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
+              <img loading="lazy" src="<?= get_post_thumb(['w' => 285, 'h' => '285']) ?>"
+                class="team-member__image-image" width="285" height="285" alt="<?php the_title(); ?>">
             </div>
             <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
+              <?php if(wp_get_post_terms(get_the_ID(), 'position')): ?>
+              <div class="team-member__label"><?= wp_get_post_terms(get_the_ID(), 'position')[0]->name ?></div>
+              <?php endif; ?>
+              <div class="team-member__title"><?php the_title() ?></div>
+              <button class="btn-reset team-member__button hover-gradient" data-graph-path="<?= get_the_ID() ?>"><span
                   data-text="Подробнее →">Подробнее →</span></button>
             </div>
           </div>
-          <div class="swiper-slide team__item team-member slider__item">
-            <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
-            </div>
-            <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
-                  data-text="Подробнее →">Подробнее →</span></button>
-            </div>
-          </div>
-          <div class="swiper-slide team__item team-member slider__item">
-            <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
-            </div>
-            <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
-                  data-text="Подробнее →">Подробнее →</span></button>
-            </div>
-          </div>
-          <div class="swiper-slide team__item team-member slider__item">
-            <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
-            </div>
-            <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
-                  data-text="Подробнее →">Подробнее →</span></button>
-            </div>
-          </div>
-          <div class="swiper-slide team__item team-member slider__item">
-            <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
-            </div>
-            <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
-                  data-text="Подробнее →">Подробнее →</span></button>
-            </div>
-          </div>
-          <div class="swiper-slide team__item team-member slider__item">
-            <div class="team-member__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/team/team-member-2.jpg"
-                class="team-member__image-image" width="285" height="285" alt="Новоградский Алексей Петрович">
-            </div>
-            <div class="team-member__content">
-              <div class="team-member__label">Директор по развитию</div>
-              <div class="team-member__title">Новоградский Алексей Петрович</div>
-              <button class="btn-reset team-member__button hover-gradient" data-graph-path="team-member-modal"><span
-                  data-text="Подробнее →">Подробнее →</span></button>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
       <div class="slider__controlls">

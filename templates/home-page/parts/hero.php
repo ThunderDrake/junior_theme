@@ -10,7 +10,7 @@
         <h1 class="hero__title">детский футбольный центр <span>Джуниор</span></h1>
       </div>
       <button class="btn-reset hero__appointment gradient-button"
-        data-graph-path="appointment-modal">Записаться</button>
+        data-graph-path="callback">Записаться</button>
     </div>
   </div>
 </section>

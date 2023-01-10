@@ -1,43 +1,41 @@
 <?php
 /* Шаблон модальных окон сайта */
+$team_members = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'team',
+      'publish'     => true,
+  ]
+);
 ?>
 
 <section class="modals">
   <div class="graph-modal">
     <!-- <div class="graph-modal__bg"></div> -->
-    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="team-member-modal">
+    <?php foreach($team_members as $post): ?>
+    <?php setup_postdata($post); ?>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="<?= get_the_ID() ?>">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
       <div class="graph-modal__content team-member__modal">
         <div class="team__big-item team-member team-member--big">
           <div class="team-member__image">
-            <img loading="lazy" src="img/team/team-member-1.jpg" class="team-member__image-image" width="590"
-              height="590" alt="Новоградская Ксения Игоревна">
+            <img loading="lazy" src="<?= get_post_thumb(['w' => 590, 'h' => 590]) ?>" class="team-member__image-image" width="590"
+              height="590" alt="<?php the_title() ?>">
           </div>
           <div class="team-member__content">
-            <div class="team-member__label">Директор</div>
-            <div class="team-member__title">Новоградская Ксения Игоревна</div>
+            <?php if(wp_get_post_terms(get_the_ID(), 'position')): ?>
+            <div class="team-member__label"><?= wp_get_post_terms(get_the_ID(), 'position')[0]->name ?></div>
+            <?php endif; ?>
+            <div class="team-member__title"><?php the_title() ?></div>
             <div class="team-member__descr">
-              <p>
-                В футбол я пришла около шести лет назад (тогда работая в другом клубе).
-                Клубу Джуниор — четвертый год, за эти четыре года все клиенты нашей школы для меня стали словно родные
-                люди. А дети наших клиентов — словно это мои дети.
-                Я очень дорожу нашим великолепным коллективом и на столько счастлива, что все вместе мы смогли стать
-                школой НОМЕР ОДИН в Новосибирске! Наши одни из главных ценностей: открытость и вовлеченность.
-              </p>
-              <p>
-                Мы вегда говорим:<br>
-                «Все лучшее — детям!<br>
-                За качество отвечаем!»
-              </p>
-              <p>
-                И это действительно так! Приходите и сами все увидите!
-              </p>
+              <?php the_content(); ?>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <?php endforeach; ?>
     <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
@@ -67,6 +65,12 @@
             allowfullscreen></iframe>
         </div>
       </article>
+    </div>
+    <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="callback">
+      <div class="form-section__content">
+        <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>
+        <?php ct()->template('home-page/parts/form.php', [ 'id' => 'callback' ]) ?>
+      </div>
     </div>
   </div>
 </section>

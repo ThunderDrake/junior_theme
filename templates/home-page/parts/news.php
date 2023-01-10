@@ -18,7 +18,7 @@
               и UEFA</div>
           </div>
         </div>
-        <div class="swiper-slide news__item news-item slider__item">
+        <div class="swiper-slide news__item news-item slider__item" data-graph-path="news">
           <div class="news-item__image">
             <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/news/news-item-1.jpg"
               class="news-item__image-image" width="385" height="200" alt="Новоградский Алексей Петрович">
@@ -29,7 +29,7 @@
               и UEFA</div>
           </div>
         </div>
-        <div class="swiper-slide news__item news-item slider__item">
+        <div class="swiper-slide news__item news-item slider__item" data-graph-path="news">
           <div class="news-item__image">
             <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/news/news-item-1.jpg"
               class="news-item__image-image" width="385" height="200" alt="Новоградский Алексей Петрович">
