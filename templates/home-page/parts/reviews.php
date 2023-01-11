@@ -1,6 +1,6 @@
 <?php
 /* Секция Reviews */
-
+global $post;
 $reviews = get_posts(
   [
       'numberposts' => -1,
@@ -31,6 +31,7 @@ $reviews = get_posts(
           </div>
         </div>
         <?php endforeach; ?>
+        <?php wp_reset_postdata() ?>
       </div>
     </div>
     <div class="slider__controlls">

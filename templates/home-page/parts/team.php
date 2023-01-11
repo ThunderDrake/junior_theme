@@ -1,6 +1,6 @@
 <?php
 /* Секция Team */
-
+global $post;
 $pinned_member = get_pinned_member_post();
 $team_members = get_posts(
   [
@@ -60,6 +60,7 @@ $big_member_position_obj = wp_get_post_terms($big_member_post_obj->ID, 'position
             </div>
           </div>
           <?php endforeach; ?>
+          <?php wp_reset_postdata() ?>
         </div>
       </div>
       <div class="slider__controlls">
