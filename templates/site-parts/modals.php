@@ -1,5 +1,13 @@
 <?php
 /* Шаблон модальных окон сайта */
+global $post;
+$news = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'news',
+      'publish'     => true,
+  ]
+);
 $team_members = get_posts(
   [
       'numberposts' => -1,
@@ -43,25 +51,22 @@ $reviews = get_posts(
       </div>
     </div>
     <?php endforeach; ?>
-    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news">
+    <?php wp_reset_postdata() ?>
+    <?php foreach($news as $post): ?>
+    <?php setup_postdata($post); ?>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="<?php the_ID() ?>">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
       <article class="graph-modal__content news-item__modal">
-        <div class="news-item__date">13 ноября 2022</div>
-        <h3 class="news-item__modal-title">Наш клуб заключил соглашение о развитии детского женского футбола с РФС
-          и UEFA</h3>
+        <div class="news-item__date"><?= get_field('news_date') ?></div>
+        <h3 class="news-item__modal-title"><?php the_title() ?></h3>
         <p class="news-item__modal-content">
-          А ещё интерактивные прототипы заблокированы в рамках своих собственных рациональных ограничений. Имеется
-          спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний объективно рассмотрены
-          соответствующими инстанциями. В частности, сплочённость команды профессионалов обеспечивает актуальность новых
-          принципов формирования материально-технической и кадровой базы. Однозначно, действия представителей оппозиции,
-          инициированные исключительно синтетически, указаны как претенденты на роль ключевых факторов. Задача
-          организации, в особенности же курс на социально-ориентированный национальный проект в значительной степени
-          обусловливает важность стандартных подходов. Однозначно, сторонники тоталитаризма в науке формируют глобальную
-          экономическую сеть и при этом — в равной степени предоставлены сами себе.
+          <?php the_content() ?>
         </p>
       </article>
     </div>
+    <?php endforeach; ?>
+    <?php wp_reset_postdata() ?>
     <?php foreach($reviews as $post): ?>
     <?php setup_postdata($post); ?>
     <?php
@@ -87,6 +92,7 @@ $reviews = get_posts(
       </article>
     </div>
     <?php endforeach; ?>
+    <?php wp_reset_postdata() ?>
     <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="callback">
       <div class="form-section__content">
         <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>
