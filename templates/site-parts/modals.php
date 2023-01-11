@@ -7,6 +7,13 @@ $team_members = get_posts(
       'publish'     => true,
   ]
 );
+$reviews = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'reviews',
+      'publish'     => true,
+  ]
+);
 ?>
 
 <section class="modals">
@@ -55,17 +62,31 @@ $team_members = get_posts(
         </p>
       </article>
     </div>
-    <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="review">
+    <?php foreach($reviews as $post): ?>
+    <?php setup_postdata($post); ?>
+    <?php
+      $reviews_src = '';
+      error_log( print_r( get_field('review_video_type'), true ) );
+      if('yotube' == get_field('review_video_type')) {
+        $reviews_src = get_field('review_video_link');
+      } else if('source' == get_field('review_video_type')) {
+        $reviews_src = get_field('review_video_source');
+      } else {
+        $reviews_src = 'https://www.youtube.com/embed/eGi447l2_mM';
+      }
+    ?>
+    <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="<?php the_ID() ?>">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
       <article class="graph-modal__content review-item__modal">
-        <div class="modal__video" data-video="https://www.youtube.com/embed/eGi447l2_mM">
+        <div class="modal__video" data-video="<?= $reviews_src ?>">
           <iframe width="560" height="850" src="" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </article>
     </div>
+    <?php endforeach; ?>
     <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="callback">
       <div class="form-section__content">
         <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>

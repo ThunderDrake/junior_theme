@@ -1,5 +1,13 @@
 <?php
 /* Секция Reviews */
+
+$reviews = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'reviews',
+      'publish'     => true,
+  ]
+);
 ?>
 
 <section class="reviews" id="reviews">
@@ -10,76 +18,19 @@
     </div>
     <div class="swiper reviews__slider slider">
       <div class="swiper-wrapper reviews__slider-wrapper slider__wrapper">
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
+        <?php foreach($reviews as $post): ?>
+        <?php setup_postdata($post); ?>
+        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="<?php the_ID(); ?>">
+          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 248, 'h' => 400, 'allow' => 'any', 'src' => wp_get_attachment_image_url( get_field('review_image'), 'full' ) ], ) ?>"
+            class="review-item__image" width="248" height="400" alt="<?php the_title() ?>">
+          <span class="review-item__name"><?php the_title() ?></span>
           <div class="review-item__hover">
             <svg class="review-item__hover-icon" width="80" height="80">
               <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
             </svg>
           </div>
         </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="review">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/review/review-item-1.jpg"
-            class="review-item__image" width="248" height="400" alt="Отзыв номер 1">
-          <span class="review-item__name">Дмитрий Курлаев</span>
-          <div class="review-item__hover">
-            <svg class="review-item__hover-icon" width="80" height="80">
-              <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#play-button"></use>
-            </svg>
-          </div>
-        </div>
+        <?php endforeach; ?>
       </div>
     </div>
     <div class="slider__controlls">
