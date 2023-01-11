@@ -17,10 +17,10 @@ $news = get_posts(
       <div class="swiper-wrapper news__slider-wrapper slider__wrapper">
         <?php foreach($news as $post): ?>
         <?php setup_postdata($post) ?>
-        <?php $news_thumb = kama_thumb_src([ 'w' => 385, 'h' => 200, 'allow' => 'any', 'src' => get_the_post_thumbnail_url(), 'stub_url' => get_template_directory_uri(get_the_ID(), 'full') . '/assets/img/news/news-item-placeholder.jpg' ], ) ?>
+        <?php $news_thumb_src = kama_thumb_src([ 'w' => 385, 'h' => 200, 'allow' => 'any', 'src' => get_the_post_thumbnail_url(), 'stub_url' => get_template_directory_uri(get_the_ID(), 'full') . '/assets/img/news/news-item-placeholder.jpg' ], ) ?>
         <div class="swiper-slide news__item news-item slider__item" data-graph-path="<?php the_ID() ?>">
           <div class="news-item__image">
-            <img loading="lazy" src="<?= $news_thumb ?>"
+            <img loading="lazy" src="<?= $news_thumb_src ?>"
               class="news-item__image-image" width="385" height="200" alt="<?php the_title() ?>">
           </div>
           <div class="news-item__content">

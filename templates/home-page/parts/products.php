@@ -1,5 +1,13 @@
 <?php
 /* Секция Products */
+global $post;
+$products = get_posts(
+  [
+      'numberposts' => -1,
+      'post_type'   => 'products',
+      'publish'     => true,
+  ]
+);
 ?>
 
 <section class="products" id="production">
@@ -11,41 +19,20 @@
       </div>
       <div class="swiper products__slider slider">
         <div class="swiper-wrapper products__slider-wrapper slider__wrapper">
-          <div class="swiper-slide products__item products-item slider__item" data-graph-path="products">
+          <?php foreach($products as $post): ?>
+          <?php setup_postdata($post); ?>
+          <?php
+          $product_thumb_src = kama_thumb_src([ 'w' => 285, 'h' => 285, 'allow' => 'any', 'src' => get_the_post_thumbnail_url(get_the_ID(), 'full'), 'stub_url' => get_template_directory_uri() . '/assets/img/products/products-item-1.jpg' ], )
+          ?>
+          <div class="swiper-slide products__item products-item slider__item">
             <div class="products-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/products/products-item-1.jpg"
-                class="products-item__image-image" width="285" height="285" alt="Название продукта">
+              <img loading="lazy" src="<?= $product_thumb_src ?>"
+                class="products-item__image-image" width="285" height="285" alt="<?php the_title() ?>">
             </div>
-            <div class="products-item__title">Название продукта</div>
+            <div class="products-item__title"><?php the_title() ?></div>
           </div>
-          <div class="swiper-slide products__item products-item slider__item" data-graph-path="products">
-            <div class="products-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/products/products-item-1.jpg"
-                class="products-item__image-image" width="285" height="285" alt="Название продукта">
-            </div>
-            <div class="products-item__title">Название продукта</div>
-          </div>
-          <div class="swiper-slide products__item products-item slider__item" data-graph-path="products">
-            <div class="products-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/products/products-item-1.jpg"
-                class="products-item__image-image" width="285" height="285" alt="Название продукта">
-            </div>
-            <div class="products-item__title">Название продукта</div>
-          </div>
-          <div class="swiper-slide products__item products-item slider__item" data-graph-path="products">
-            <div class="products-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/products/products-item-1.jpg"
-                class="products-item__image-image" width="285" height="285" alt="Название продукта">
-            </div>
-            <div class="products-item__title">Название продукта</div>
-          </div>
-          <div class="swiper-slide products__item products-item slider__item" data-graph-path="products">
-            <div class="products-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/products/products-item-1.jpg"
-                class="products-item__image-image" width="285" height="285" alt="Название продукта">
-            </div>
-            <div class="products-item__title">Название продукта</div>
-          </div>
+          <?php endforeach; ?>
+          <?php wp_reset_postdata() ?>
         </div>
       </div>
       <div class="slider__controlls">
