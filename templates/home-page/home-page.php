@@ -19,6 +19,7 @@ ct()->header();
   <?php ct()->template('home-page/parts/news.php') ?>
   <?php ct()->template('home-page/parts/partners.php') ?>
   <?php ct()->template('home-page/parts/reviews.php') ?>
+  <?php ct()->template('home-page/parts/faq.php') ?>
   <?php ct()->template('home-page/parts/products.php') ?>
   <?php ct()->template('home-page/parts/contacts.php') ?>
 

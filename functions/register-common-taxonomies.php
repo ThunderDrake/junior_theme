@@ -20,5 +20,6 @@ function register_common_taxonomies() {
 		],
 		'show_admin_column' => true,
 		'show_in_rest'      => false,
+    'publicly_queryable' => false
 	] );
 }

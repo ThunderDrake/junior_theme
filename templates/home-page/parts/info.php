@@ -20,8 +20,8 @@
             <svg class="info__item-icon" width="40" height="40">
               <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#info__item-icon-2"></use>
             </svg>
-            <button class="info__item-title btn-reset hover-gradient" data-graph-path="info__item-2"><span
-                data-text="Договор оказания услуг&nbsp;→">Договор оказания услуг →</span></button>
+            <a class="info__item-title btn-reset hover-gradient" href="<?= ct()->get_static_url() ?>/junior-doc-tpl.docx" download target="_blank"><span
+                data-text="Договор оказания услуг&nbsp;→">Договор оказания услуг →</span></a>
           </div>
         </div>
         <div class="info__item swiper-slide slider__item">
