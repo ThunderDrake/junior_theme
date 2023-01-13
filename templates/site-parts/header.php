@@ -25,7 +25,7 @@
 <body class="page__body">
   <div class="site-container">
 
-    <header class="header">
+    <header class="header <?php if(!is_front_page()) {echo 'header--inner';} ?>">
 
       <div class="container header__container">
         <div class="logo header__logo">
