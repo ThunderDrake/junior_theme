@@ -12,7 +12,7 @@
 function add_templates_to_dropdown( $templates ) {
 
 	// выбор шаблона в атрибутах
-	// $templates['templates/page-applicant/page-applicant.php'] = 'Поступающим';
+	$templates['templates/comands-page/comands-page.php'] = 'Команды клуба';
 
 	return $templates;
 }

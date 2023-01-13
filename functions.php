@@ -34,4 +34,5 @@ require __DIR__ . '/functions/team/module.php';
 require __DIR__ . '/functions/reviews/module.php';
 require __DIR__ . '/functions/news/module.php';
 require __DIR__ . '/functions/products/module.php';
+require __DIR__ . '/functions/comands/module.php';
 
