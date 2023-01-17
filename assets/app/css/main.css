@@ -302,6 +302,14 @@ a {
   margin-right: 10px;
 }
 
+.d-none {
+  display: none !important;
+}
+
+.table-item--all-empty {
+  display: none;
+}
+
 .graph-modal {
   background: -o-linear-gradient(160.46deg, rgba(11, 76, 142, 0.9) 10.43%, rgba(35, 164, 219, 0.9) 96.95%);
   background: linear-gradient(289.54deg, rgba(11, 76, 142, 0.9) 10.43%, rgba(35, 164, 219, 0.9) 96.95%);
@@ -1782,6 +1790,9 @@ a {
   width: 100%;
   max-width: 285px;
 }
+.schedule__select .choices__placeholder {
+  opacity: 1;
+}
 .schedule__select-label {
   position: absolute;
   left: 20px;
@@ -2287,7 +2298,6 @@ a {
 .review-item:hover .review-item__name {
   opacity: 0;
 }
-
 .faq {
   margin-bottom: 80px;
 }

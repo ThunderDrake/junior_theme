@@ -17,6 +17,23 @@ class Assets {
 		// Custom
 		$this->attach_style( '/custom/custom.css' );
 		$this->attach_script( '/custom/custom.js' );
+
+    wp_localize_script(
+      $this->get_handle( '/assets/app/js/main.js' ),
+      'disctrict_object',
+      array(
+        'url'   => admin_url( 'admin-ajax.php' ),
+        'nonce' => wp_create_nonce( 'disctrict-nonce' ),
+      )
+    );
+    wp_localize_script(
+      $this->get_handle( '/assets/app/js/main.js' ),
+      'schedule_object',
+      array(
+        'url'   => admin_url( 'admin-ajax.php' ),
+        'nonce' => wp_create_nonce( 'schedule-nonce' ),
+      )
+    );
 	}
 
 	private function attach_style( $path, $deps = [] ) {
