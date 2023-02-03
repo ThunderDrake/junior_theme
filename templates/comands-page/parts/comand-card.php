@@ -7,8 +7,13 @@ $achivements = get_field('comand_achivement');
 <div class="comand__tab-panel tabs__panel">
   <div class="comand__tab-wrapper">
     <div class="comand__image">
+      <?php if(has_post_thumbnail()): ?>
+        <img loading="lazy" src="<?php the_post_thumbnail_url('full') ?>" class="comand__image-image"
+        width="660" height="495" alt="Фото сборной">
+      <?php else: ?>
       <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/comand-image.jpg" class="comand__image-image"
         width="660" height="495" alt="Фото сборной">
+      <?php endif; ?>
     </div>
     <div class="comand__info">
       <h2 class="comand__name">Сборная <?php the_title() ?></h2>
