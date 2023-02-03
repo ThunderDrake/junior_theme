@@ -970,6 +970,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_products_slider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/products-slider.js */ "./assets/src/js/components/products-slider.js");
 /* harmony import */ var _components_comands_tabs_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/comands-tabs.js */ "./assets/src/js/components/comands-tabs.js");
 /* harmony import */ var _components_season_slider_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/season-slider.js */ "./assets/src/js/components/season-slider.js");
+/* harmony import */ var _components_license_slider_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/license-slider.js */ "./assets/src/js/components/license-slider.js");
+
 
 
 
@@ -1375,6 +1377,32 @@ if (window.matchMedia("(max-width: 576px)").matches) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./assets/src/js/components/license-slider.js":
+/*!****************************************************!*\
+  !*** ./assets/src/js/components/license-slider.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+const licenselider = document.querySelector('.license__slider');
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](licenselider, {
+  slidesPerView: 1,
+  pagination: {
+    el: '.license .swiper-pagination',
+    type: 'fraction'
+  },
+  navigation: {
+    nextEl: '.license .swiper-button-next',
+    prevEl: '.license .swiper-button-prev'
+  }
+});
 
 /***/ }),
 

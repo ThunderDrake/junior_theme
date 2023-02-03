@@ -67,6 +67,6 @@
           уровня!</p>
       </article>
     </div>
-    <a class="steps__link gradient-button" href="/commands.html/">Сборные команды клуба</a>
+    <a class="steps__link gradient-button" href="/commands/">Сборные команды клуба</a>
   </div>
 </section>

@@ -836,13 +836,22 @@ a {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
   max-height: 850px;
-  background-image: url("../img/hero-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.hero__video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  object-fit: cover;
 }
 .hero__container {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3126,6 +3135,15 @@ a {
     margin-top: 10px;
     margin-right: auto;
     margin-left: 0;
+  }
+}
+.license {
+  width: 50% !important;
+}
+
+@media (max-width: 1024px) {
+  .license {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

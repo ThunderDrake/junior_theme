@@ -13,3 +13,4 @@ import "./components/faq-accordion.js";
 import "./components/products-slider.js";
 import "./components/comands-tabs.js";
 import "./components/season-slider.js";
+import "./components/license-slider.js";
