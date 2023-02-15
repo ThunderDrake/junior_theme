@@ -1,7 +1,7 @@
 <?php
-add_action( 'wp_ajax_disctrict_action', 'ajax_action_callback' );
-add_action( 'wp_ajax_nopriv_disctrict_action', 'ajax_action_callback' );
-function ajax_action_callback() {
+add_action( 'wp_ajax_disctrict_action', 'ajax_action_schedule' );
+add_action( 'wp_ajax_nopriv_disctrict_action', 'ajax_action_schedule' );
+function ajax_action_schedule() {
   if ( ! wp_verify_nonce( $_POST['nonce'], 'disctrict-nonce' ) ) {
 		wp_die( 'Данные отправлены с левого адреса' );
 	}

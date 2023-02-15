@@ -34,6 +34,14 @@ class Assets {
         'nonce' => wp_create_nonce( 'schedule-nonce' ),
       )
     );
+    wp_localize_script(
+      $this->get_handle( '/assets/app/js/main.js' ),
+      'form_object',
+      array(
+        'url'   => admin_url( 'admin-ajax.php' ),
+        'nonce' => wp_create_nonce( 'form-nonce' ),
+      )
+    );
 	}
 
 	private function attach_style( $path, $deps = [] ) {

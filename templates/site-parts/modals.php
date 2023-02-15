@@ -84,9 +84,7 @@ $reviews = get_posts(
           class="graph-modal__close-icon"></span></button>
       <article class="graph-modal__content review-item__modal">
         <div class="modal__video" data-video="<?= $reviews_src ?>">
-          <iframe width="560" height="850" src="" frameborder="0"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+          <video width="560" height="850" src="" controls style="border-radius: 40px"></video>
         </div>
       </article>
     </div>
@@ -99,18 +97,18 @@ $reviews = get_posts(
       </div>
     </div>
 
-    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="info__item-1">
+    <div class="graph-modal__container modal__height" role="dialog" aria-modal="true" data-graph-target="info__item-1">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
       <div class="graph-modal__content team-member__modal">
         <div class="team__big-item team-member team-member--big">
-          <div class="team-member__image">
-            <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/fcloko.png" class="team-member__image-image" width="590"
-              height="590" alt="<?php the_title() ?>">
-          </div>
+          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/fcloko.png" class="team-member__image-image" width="590" alt="<?php the_title() ?>">
+          <!-- <div class="team-member__image">
+          </div> -->
         </div>
       </div>
     </div>
+
     <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="info__item-3">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
@@ -168,11 +166,11 @@ $reviews = get_posts(
         </div>
       </div>
     </div>
-    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="info__item-4">
+    <div class="graph-modal__container modal__height" role="dialog" aria-modal="true" data-graph-target="info__item-4">
       <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
           class="graph-modal__close-icon"></span></button>
       <div class="graph-modal__content team-member__modal">
-        <div class="season">
+        <div class="season" style="padding: 30px">
           <div class="swiper season__slider slider">
             <div class="swiper-wrapper season__slider-wrapper slider__wrapper">
               <div class="swiper-slide season__item season-item slider__item">
@@ -212,6 +210,15 @@ $reviews = get_posts(
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="graph-modal__container thankyou__container" role="dialog" aria-modal="true" data-graph-target="thankyou">
+      <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
+          class="graph-modal__close-icon"></span></button>
+      <div class="graph-modal__content thankyou__modal">
+        <div class="thankyou__title">Спасибо за заявку!</div>
+        <div class="thankyou__text">Наш менеджер скоро с вами свяжется</div>
       </div>
     </div>
   </div>

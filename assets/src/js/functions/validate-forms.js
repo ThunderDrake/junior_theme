@@ -1,7 +1,7 @@
 import JustValidate from 'just-validate';
 import Inputmask from "inputmask";
 
-export const validateForms = (selector, rules, afterSend) => {
+export const validateForms = (selector, rules, url, nonce, action, afterSend) => {
   const form = document?.querySelector(selector);
   const telSelector = form?.querySelector('input[type="tel"]');
 
@@ -42,6 +42,8 @@ export const validateForms = (selector, rules, afterSend) => {
 
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);
+    formData.append('action', action);
+    formData.append('nonce', nonce);
 
     let xhr = new XMLHttpRequest();
 
@@ -56,7 +58,7 @@ export const validateForms = (selector, rules, afterSend) => {
       }
     }
 
-    xhr.open('POST', 'mail.php', true);
+    xhr.open('POST', url, true);
     xhr.send(formData);
 
     ev.target.reset();

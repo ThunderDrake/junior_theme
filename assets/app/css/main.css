@@ -3146,4 +3146,33 @@ a {
     width: 100%;
   }
 }
+.thankyou__modal {
+  padding: 2em 1.5em;
+}
+.thankyou__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+}
+
+.thankyou__text {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.modal__height .graph-modal__content {
+  padding: 0;
+}
+
+.modal__height .team__big-item {
+  padding: 30px;
+  margin: 0;
+}
+
+.modal__height img {
+  max-height: 80vh;
+  width: auto;
+  object-fit: contain;
+}
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,7 @@ if(customSelects.length) {
     const choise = new Choices(select, {
       searchEnabled: false,
       position: 'bottom',
+      shouldSort: false
     })
   })
 }

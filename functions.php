@@ -37,4 +37,5 @@ require __DIR__ . '/functions/products/module.php';
 require __DIR__ . '/functions/comands/module.php';
 require __DIR__ . '/functions/affiliate/module.php';
 require __DIR__ . '/functions/schedule/module.php';
+require __DIR__ . '/functions/forms/module.php';
 

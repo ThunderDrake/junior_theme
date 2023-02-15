@@ -3,16 +3,18 @@ const modal = new GraphModal({
   isOpen: (modal) => {
     if(modal.modalContainer.querySelector('.modal__video')) {
       const modalVideo = modal.modalContainer.querySelector('.modal__video').getAttribute('data-video');
-      const iframe = modal.modalContainer.querySelector('iframe');
+      const video = modal.modalContainer.querySelector('video');
 
-      iframe.setAttribute('src', modalVideo)
+      video.setAttribute('src', modalVideo)
     }
   },
   isClose: (modal) => {
-    if(modal.modalContainer.querySelector('iframe')) {
-      const iframe = modal.modalContainer.querySelector('iframe');
+    if(modal.modalContainer.querySelector('video')) {
+      const video = modal.modalContainer.querySelector('video');
 
-      iframe.setAttribute('src', '')
+      video.setAttribute('src', '')
     }
   }
 });
+
+export default modal;

@@ -1287,7 +1287,8 @@ if (customSelects.length) {
   customSelects.forEach(select => {
     const choise = new (choices_js__WEBPACK_IMPORTED_MODULE_0___default())(select, {
       searchEnabled: false,
-      position: 'bottom'
+      position: 'bottom',
+      shouldSort: false
     });
   });
 }
@@ -1303,6 +1304,10 @@ if (customSelects.length) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/validate-forms */ "./assets/src/js/functions/validate-forms.js");
+/* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
+/* harmony import */ var _team_modal_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./team-modal.js */ "./assets/src/js/components/team-modal.js");
+
+
 
 const rules1 = [{
   ruleSelector: '#firstForm .form__input--name',
@@ -1344,11 +1349,37 @@ const rules2 = [{
     errorMessage: 'Заполните телефон!'
   }]
 }];
+const rules3 = [{
+  ruleSelector: '#callback .form__input--name',
+  rules: [{
+    rule: 'minLength',
+    value: 3
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните имя!'
+  }]
+}, {
+  ruleSelector: '#callback .form__input--phone',
+  tel: true,
+  telError: 'Введите корректный телефон',
+  rules: [{
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните телефон!'
+  }]
+}];
 const afterForm = () => {
-  console.log('Произошла отправка, тут можно писать любые действия');
+  _team_modal_js__WEBPACK_IMPORTED_MODULE_2__["default"].close();
+  new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]().open('thankyou');
+  setTimeout(() => {
+    _team_modal_js__WEBPACK_IMPORTED_MODULE_2__["default"].close();
+  }, 5000);
 };
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#firstForm', rules1, afterForm);
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#secondForm', rules2, afterForm);
+console.log(form_object);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#firstForm', rules1, form_object.url, form_object.nonce, 'form_action', afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#secondForm', rules2, form_object.url, form_object.nonce, 'form_action', afterForm);
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#callback', rules3, form_object.url, form_object.nonce, 'form_action', afterForm);
 
 /***/ }),
 
@@ -1793,23 +1824,27 @@ if (steps.length) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
 
 const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]({
   isOpen: modal => {
     if (modal.modalContainer.querySelector('.modal__video')) {
       const modalVideo = modal.modalContainer.querySelector('.modal__video').getAttribute('data-video');
-      const iframe = modal.modalContainer.querySelector('iframe');
-      iframe.setAttribute('src', modalVideo);
+      const video = modal.modalContainer.querySelector('video');
+      video.setAttribute('src', modalVideo);
     }
   },
   isClose: modal => {
-    if (modal.modalContainer.querySelector('iframe')) {
-      const iframe = modal.modalContainer.querySelector('iframe');
-      iframe.setAttribute('src', '');
+    if (modal.modalContainer.querySelector('video')) {
+      const video = modal.modalContainer.querySelector('video');
+      video.setAttribute('src', '');
     }
   }
 });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modal);
 
 /***/ }),
 
@@ -2041,7 +2076,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const validateForms = (selector, rules, afterSend) => {
+const validateForms = (selector, rules, url, nonce, action, afterSend) => {
   const form = document?.querySelector(selector);
   const telSelector = form?.querySelector('input[type="tel"]');
   if (!form) {
@@ -2074,6 +2109,8 @@ const validateForms = (selector, rules, afterSend) => {
   }
   validation.onSuccess(ev => {
     let formData = new FormData(ev.target);
+    formData.append('action', action);
+    formData.append('nonce', nonce);
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -2085,7 +2122,7 @@ const validateForms = (selector, rules, afterSend) => {
         }
       }
     };
-    xhr.open('POST', 'mail.php', true);
+    xhr.open('POST', url, true);
     xhr.send(formData);
     ev.target.reset();
   });

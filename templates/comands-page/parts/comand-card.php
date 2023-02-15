@@ -18,8 +18,8 @@ $achivements = get_field('comand_achivement');
     <div class="comand__info">
       <h2 class="comand__name">Сборная <?php the_title() ?></h2>
       <div class="comand__columns">
-        <div class="comand__label">Тренера:</div>
         <?php if($teachers): ?>
+        <div class="comand__label">Тренеры:</div>
         <div class="comand__content">
           <?php foreach($teachers as $key => $person): ?>
             <?php
