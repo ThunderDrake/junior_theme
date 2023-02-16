@@ -53,7 +53,7 @@ function ajax_action_callback() {
 	} else {
 
 		// Указываем адресата
-		$email_to = '';
+		$email_to = ['Knovogradskas@gmail.com', 'intsystem.k@gmail.com', 'ekucyr@gmail.com', 'Ovleonova1971@gmail.com', '2675505@mail.ru'];
 
 		// Если адресат не указан, то берем данные из настроек сайта
 		if ( ! $email_to ) {
