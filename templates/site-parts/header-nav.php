@@ -7,14 +7,17 @@
     <nav class="navigation__nav nav" title="Навигация по сайту">
       <ul class="nav__list list-reset">
         <li class="nav__item"><a href="/#info" class="nav__link" data-menu-item>Цели и принципы</a></li>
+        <li class="nav__item"><a href="/#why-us" class="nav__link" data-menu-item>Почему мы</a></li>
         <li class="nav__item"><a href="/#advantages" class="nav__link" data-menu-item>Преимущества</a></li>
+        <li class="nav__item"><a href="/#steps" class="nav__link" data-menu-item>Этапы развития</a></li>
         <li class="nav__item"><a href="/#team" class="nav__link" data-menu-item>Наша команда</a></li>
-        <li class="nav__item"><a href="/#news" class="nav__link" data-menu-item>Новости</a></li>
-        <li class="nav__item"><a href="/#production" class="nav__link" data-menu-item>Продукция</a></li>
         <li class="nav__item"><a href="/#schedule" class="nav__link" data-menu-item>Расписание</a></li>
+        <li class="nav__item"><a href="/#news" class="nav__link" data-menu-item>Новости</a></li>
+        <li class="nav__item"><a href="/#partners" class="nav__link" data-menu-item>Партнеры</a></li>
         <li class="nav__item"><a href="/#reviews" class="nav__link" data-menu-item>Отзывы</a></li>
-        <li class="nav__item"><a href="/#contacts" class="nav__link" data-menu-item>Контакты</a></li>
         <li class="nav__item"><a href="/#faq" class="nav__link" data-menu-item>Вопросы и ответы</a></li>
+        <li class="nav__item"><a href="/#production" class="nav__link" data-menu-item>Продукция</a></li>
+        <li class="nav__item"><a href="/#contacts" class="nav__link" data-menu-item>Контакты</a></li>
         <li class="nav__item"><a href="/comands-single.html" class="nav__link" data-menu-item>Сборные команды клуба</a></li>
       </ul>
     </nav>

@@ -2,7 +2,7 @@
 /* Секция Steps */
 ?>
 
-<section class="steps">
+<section class="steps" id="steps">
   <div class="steps__container container">
     <h2 class="steps__title h2-title">Этапы развития в клубе</h2>
     <div class="steps__grid">

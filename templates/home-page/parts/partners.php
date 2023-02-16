@@ -2,7 +2,7 @@
 /* Секция Partners */
 ?>
 
-<section class="partners">
+<section class="partners" id="partners">
   <div class="container partners__container">
     <div class="partners__wrapper">
       <h2 class="partners__title h2-title">Партнёры</h2>

@@ -7,7 +7,7 @@ if(!$items) {
 }
 ?>
 
-<section class="why-us">
+<section class="why-us" id="why-us">
   <div class="why-us__container container">
     <h2 class="why-us__title h2-title">Почему Джуниор</h2>
     <div class="why-us__list">
