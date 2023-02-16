@@ -221,22 +221,6 @@
                             },
                             "display_format": "H:i:s",
                             "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ebfe15153",
-                            "label": "Время окончания",
-                            "name": "time_end",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
                         }
                     ]
                 }
@@ -338,22 +322,6 @@
                             "key": "field_63c1ec1915159",
                             "label": "Время начала",
                             "name": "time_start",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ec191515a",
-                            "label": "Время окончания",
-                            "name": "time_end",
                             "type": "time_picker",
                             "instructions": "",
                             "required": 1,
@@ -477,22 +445,6 @@
                             },
                             "display_format": "H:i:s",
                             "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ec2615161",
-                            "label": "Время окончания",
-                            "name": "time_end",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
                         }
                     ]
                 }
@@ -594,22 +546,6 @@
                             "key": "field_63c1ec3115167",
                             "label": "Время начала",
                             "name": "time_start",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ec3115168",
-                            "label": "Время окончания",
-                            "name": "time_end",
                             "type": "time_picker",
                             "instructions": "",
                             "required": 1,
@@ -733,22 +669,6 @@
                             },
                             "display_format": "H:i:s",
                             "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ec3b1516f",
-                            "label": "Время окончания",
-                            "name": "time_end",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
                         }
                     ]
                 }
@@ -861,22 +781,6 @@
                             },
                             "display_format": "H:i:s",
                             "return_format": "H:i:s"
-                        },
-                        {
-                            "key": "field_63c1ec4515176",
-                            "label": "Время окончания",
-                            "name": "time_end",
-                            "type": "time_picker",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "display_format": "H:i:s",
-                            "return_format": "H:i:s"
                         }
                     ]
                 }
@@ -901,5 +805,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673903057
+    "modified": 1676573685
 }
