@@ -30,8 +30,8 @@
           <a class="navigation__contacts-item hover-gradient contacts-section__address" href="/"><span
               data-text="<?= get_field('home_address', 'option') ?: '' ?>"><?= get_field('home_address', 'option') ?: '' ?></span></a>
           <div class="contacts-section__socials">
-            <?php if(get_field('home_social_vk', 'option')): ?>
-            <a class="contacts-section__socials-link" href="<?= get_field('home_social_vk', 'option') ?: '' ?>">
+            <?php if(get_field('home_socials_vk', 'option')): ?>
+            <a class="contacts-section__socials-link" href="<?= get_field('home_socials_vk', 'option') ?: '' ?>">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="contacts-section__socials-icon">
                 <g clip-path="url(#clip0_407_4805)">
@@ -58,8 +58,8 @@
               </svg>
             </a>
             <?php endif; ?>
-            <?php if(get_field('home_social_youtube', 'option')): ?>
-            <a class="contacts-section__socials-link" href="<?= get_field('home_social_youtube', 'option') ?>">
+            <?php if(get_field('home_socials_youtube', 'option')): ?>
+            <a class="contacts-section__socials-link" href="<?= get_field('home_socials_youtube', 'option') ?>">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="contacts-section__socials-icon">
                 <g clip-path="url(#clip0_723_4401)">
