@@ -13,5 +13,5 @@
         data-graph-path="callback">Записаться</button>
     </div>
   </div>
-  <video src="<?= ct()->get_static_url() ?>/hero__video-bg.mp4" autoplay muted loop playsinline class="hero__video-bg"></video>
+  <video src="<?= ct()->get_static_url() ?>/hero__video-bg.mp4" autoplay muted loop playsinline pip="false" class="hero__video-bg"></video>
 </section>
