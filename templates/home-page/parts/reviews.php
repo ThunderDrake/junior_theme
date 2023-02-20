@@ -14,7 +14,7 @@ $reviews = get_posts(
   <div class="reviews__container container">
     <div class="reviews__header">
       <h2 class="reviews__title h2-title">Отзывы</h2>
-      <a class="reviews__link gradient-button" href="http://novosibirsk.flamp.ru/firm/dzhunior_detskaya_futbolnaya_shkola-70000001030687159" target="_blank">Читать отзывы на flamp.ru →</a>
+      <a class="reviews__link gradient-button" href="http://novosibirsk.flamp.ru/firm/dzhunior_detskaya_futbolnaya_shkola-70000001030687159/" target="_blank">Читать отзывы на flamp.ru →</a>
     </div>
     <div class="swiper reviews__slider slider">
       <div class="swiper-wrapper reviews__slider-wrapper slider__wrapper">
@@ -50,6 +50,6 @@ $reviews = get_posts(
         </svg>
       </div>
     </div>
-    <a class="reviews__link reviews__link--mobile gradient-button" href="/">Читать отзывы на flamp.ru →</a>
+    <a class="reviews__link reviews__link--mobile gradient-button" href="http://novosibirsk.flamp.ru/firm/dzhunior_detskaya_futbolnaya_shkola-70000001030687159/">Читать отзывы на flamp.ru →</a>
   </div>
 </section>
