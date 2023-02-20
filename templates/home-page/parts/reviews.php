@@ -50,6 +50,6 @@ $reviews = get_posts(
         </svg>
       </div>
     </div>
-    <a class="reviews__link reviews__link--mobile gradient-button" href="http://novosibirsk.flamp.ru/firm/dzhunior_detskaya_futbolnaya_shkola-70000001030687159/">Читать отзывы на flamp.ru →</a>
+    <a class="reviews__link reviews__link--mobile gradient-button" href="http://novosibirsk.flamp.ru/firm/dzhunior_detskaya_futbolnaya_shkola-70000001030687159/" target="_blank">Читать отзывы на flamp.ru →</a>
   </div>
 </section>
