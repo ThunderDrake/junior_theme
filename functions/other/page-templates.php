@@ -13,6 +13,7 @@ function add_templates_to_dropdown( $templates ) {
 
 	// выбор шаблона в атрибутах
 	$templates['templates/comands-page/comands-page.php'] = 'Команды клуба';
+	$templates['templates/thank-you-page/thank-you-page.php'] = 'Спасибо';
 
 	return $templates;
 }

@@ -91,11 +91,8 @@ const rules3 = [
 
 const afterForm = () => {
   modal.close();
-  new GraphModal().open('thankyou');
 
-  setTimeout(() => {
-    modal.close();
-  }, 5000);
+  location.href = '/thank-you/'
 };
 
 console.log(form_object);

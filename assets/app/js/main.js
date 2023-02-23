@@ -1371,10 +1371,7 @@ const rules3 = [{
 }];
 const afterForm = () => {
   _team_modal_js__WEBPACK_IMPORTED_MODULE_2__["default"].close();
-  new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]().open('thankyou');
-  setTimeout(() => {
-    _team_modal_js__WEBPACK_IMPORTED_MODULE_2__["default"].close();
-  }, 5000);
+  location.href = '/thank-you/';
 };
 console.log(form_object);
 (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('#firstForm', rules1, form_object.url, form_object.nonce, 'form_action', afterForm);

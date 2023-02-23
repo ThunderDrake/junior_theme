@@ -23,7 +23,7 @@
 </head>
 
 <body class="page__body">
-  <div class="site-container">
+  <div class="site-container" <?php if(is_page('thank-you')) {echo 'style="display: flex; flex-direction: column;"';} ?> >
 
     <header class="header <?php if(!is_front_page()) {echo 'header--inner';} ?>">
 
