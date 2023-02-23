@@ -11,6 +11,7 @@
         <li class="nav__item"><a href="/#advantages" class="nav__link" data-menu-item>Преимущества</a></li>
         <li class="nav__item"><a href="/#steps" class="nav__link" data-menu-item>Этапы развития</a></li>
         <li class="nav__item"><a href="/#team" class="nav__link" data-menu-item>Наша команда</a></li>
+        <li class="nav__item"><a href="/#hymn" class="nav__link" data-menu-item>Гимн клуба</a></li>
         <li class="nav__item"><a href="/#schedule" class="nav__link" data-menu-item>Расписание</a></li>
         <li class="nav__item"><a href="/#news" class="nav__link" data-menu-item>Новости</a></li>
         <li class="nav__item"><a href="/#partners" class="nav__link" data-menu-item>Партнеры</a></li>

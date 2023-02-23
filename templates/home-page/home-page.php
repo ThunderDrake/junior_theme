@@ -14,6 +14,7 @@ ct()->header();
   <?php ct()->template('home-page/parts/form-section.php', [ 'revert' => false, 'form_id' => 'firstForm' ]) ?>
   <?php ct()->template('home-page/parts/steps.php') ?>
   <?php ct()->template('home-page/parts/team.php') ?>
+  <?php ct()->template('home-page/parts/hymn.php') ?>
   <?php ct()->template('home-page/parts/schedule.php') ?>
   <?php ct()->template('home-page/parts/form-section.php', [ 'revert' => true, 'form_id' => 'secondForm' ]) ?>
   <?php ct()->template('home-page/parts/news.php') ?>

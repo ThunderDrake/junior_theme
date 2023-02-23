@@ -28,10 +28,10 @@
     <header class="header <?php if(!is_front_page()) {echo 'header--inner';} ?>">
 
       <div class="container header__container">
-        <div class="logo header__logo">
+        <a class="logo header__logo" href="/">
           <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/logo.svg" class="logo__image" width="100" height="128"
             alt="ФК Джуниор логотип школы">
-        </div>
+        </a>
         <button class="burger header__burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
           <span class="burger__text">Меню</span>
           <span class="burger__lines"></span>

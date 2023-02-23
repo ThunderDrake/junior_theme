@@ -1671,6 +1671,11 @@ a {
   display: block;
   border-radius: 30px;
 }
+@media (max-width:1024px) {
+  .team-member__image-image {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 576px) {
   .team-member__image-image {
     width: 100%;
@@ -3185,5 +3190,51 @@ a {
 
 .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
   padding-right: 40px;
+}
+
+.hymn {
+  margin-bottom: 80px;
+}
+
+.hymn__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hymn__logo {
+  margin-bottom: 20px;
+}
+
+.hymn__title {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 610px;
+  font-family: var(--font-family-second);
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--downriver-color);
+}
+@media (max-width:475px) {
+  .hymn__title {
+    font-size: 50px;
+  }
+}
+
+.hymn__button {
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hymn__button svg {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=main.css.map */

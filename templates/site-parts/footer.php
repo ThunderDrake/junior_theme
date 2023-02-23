@@ -18,12 +18,18 @@
                     и принципы</span></a>
               </li>
               <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#why-us"><span data-text="Почему мы">Почему мы</span></a>
+              </li>
+              <li class="footer__menu-item">
                 <a class="footer__menu-link hover-gradient" href="/#advantages"><span
                     data-text="Преимущества">Преимущества</span></a>
               </li>
               <li class="footer__menu-item">
                 <a class="footer__menu-link hover-gradient" href="/#team"><span data-text="Наша команда">Наша
                     команда</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#hymn"><span data-text="Гимн клуба">Гимн клуба</span></a>
               </li>
               <li class="footer__menu-item">
                 <a class="footer__menu-link hover-gradient" href="/#news"><span data-text="Новости">Новости</span></a>
@@ -41,6 +47,10 @@
               <li class="footer__menu-item">
                 <a class="footer__menu-link hover-gradient" href="/#schedule"><span
                     data-text="Расписание">Расписание</span></a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link hover-gradient" href="/#partners"><span
+                    data-text="Партнеры">Партнеры</span></a>
               </li>
               <li class="footer__menu-item">
                 <a class="footer__menu-link hover-gradient" href="/#reviews"><span data-text="Отзывы">Отзывы</span></a>
