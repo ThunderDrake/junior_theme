@@ -212,14 +212,5 @@ $reviews = get_posts(
         </div>
       </div>
     </div>
-
-    <div class="graph-modal__container thankyou__container" role="dialog" aria-modal="true" data-graph-target="thankyou">
-      <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"><span
-          class="graph-modal__close-icon"></span></button>
-      <div class="graph-modal__content thankyou__modal">
-        <div class="thankyou__title">Спасибо за заявку!</div>
-        <div class="thankyou__text">Наш менеджер скоро с вами свяжется</div>
-      </div>
-    </div>
   </div>
 </section>
