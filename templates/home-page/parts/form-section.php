@@ -23,7 +23,7 @@ $revert = $args['revert'] ? 'form-section__container--revert' : '';
       <?php endif; ?>
     </div>
     <div class="form-section__content">
-      <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>
+      <h2 class="form-section__title">Запишитесь на пробную тренировку</h2>
       <?php ct()->template('home-page/parts/form.php', [ 'id' => $args['form_id'] ]) ?>
     </div>
   </div>

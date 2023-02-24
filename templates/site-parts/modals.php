@@ -92,7 +92,7 @@ $reviews = get_posts(
     <?php wp_reset_postdata() ?>
     <div class="graph-modal__container review__modal" role="dialog" aria-modal="true" data-graph-target="callback">
       <div class="form-section__content">
-        <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>
+        <h2 class="form-section__title">Запишитесь на пробную тренировку</h2>
         <?php ct()->template('home-page/parts/form.php', [ 'id' => 'callback' ]) ?>
       </div>
     </div>
