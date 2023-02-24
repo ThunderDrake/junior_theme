@@ -1,5 +1,11 @@
 <?php
 /* Секция Partners */
+
+$partners = get_posts([
+  'numberposts' => -1,
+  'post_type'   => 'partners',
+  'publish'     => true,
+])
 ?>
 
 <section class="partners" id="partners">
@@ -8,72 +14,15 @@
       <h2 class="partners__title h2-title">Партнёры</h2>
       <div class="swiper partners__slider slider">
         <div class="swiper-wrapper partners__slider-wrapper slider__wrapper">
+          <?php foreach($partners as $post): ?>
+          <?php setup_postdata($post) ?>
           <div class="swiper-slide partners__item partners-item slider__item">
             <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-1.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
+              <img loading="lazy" src="<?= wp_get_attachment_image_url( get_field('partner_image'), 'full' ) ?>"
+                class="partners-item__image-image" width="200" height="100" alt="<?php the_title(); ?>">
             </div>
           </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-2.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-3.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-4.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-5.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-6.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-7.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-8.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-9.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-10.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
-          <div class="swiper-slide partners__item partners-item slider__item">
-            <div class="partners-item__image">
-              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-11.jpg"
-                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
       <div class="slider__controlls">
