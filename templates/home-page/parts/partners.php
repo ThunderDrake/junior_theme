@@ -50,6 +50,30 @@
                 class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
             </div>
           </div>
+          <div class="swiper-slide partners__item partners-item slider__item">
+            <div class="partners-item__image">
+              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-8.jpg"
+                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
+            </div>
+          </div>
+          <div class="swiper-slide partners__item partners-item slider__item">
+            <div class="partners-item__image">
+              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-9.jpg"
+                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
+            </div>
+          </div>
+          <div class="swiper-slide partners__item partners-item slider__item">
+            <div class="partners-item__image">
+              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-10.jpg"
+                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
+            </div>
+          </div>
+          <div class="swiper-slide partners__item partners-item slider__item">
+            <div class="partners-item__image">
+              <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/partners/partners-item-11.jpg"
+                class="partners-item__image-image" width="200" height="100" alt="Имя партнёра">
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider__controlls">

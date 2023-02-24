@@ -2179,6 +2179,7 @@ a {
 }
 .partners-item__image-image {
   width: auto;
+  max-width: 220px;
 }
 
 .reviews {
