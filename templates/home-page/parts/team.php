@@ -19,7 +19,8 @@ $big_member_position_obj = wp_get_post_terms($big_member_post_obj->ID, 'position
       <h2 class="team__title h2-title">Наша команда</h2>
       <div class="team__big-item team-member team-member--big">
         <div class="team-member__image">
-          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 590, 'h' => 590, 'allow' => 'any', 'src' => get_the_post_thumbnail_url($big_member_post_obj) ], ) ?>"
+
+          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 590, 'h' => 590, 'allow' => 'any', 'src' => get_the_post_thumbnail_url($big_member_post_obj), 'stub_url' => ct()->get_static_url() . '/img/photo-placeholder.png' ], ) ?>"
             class="team-member__image-image" width="590" height="590" alt="<?= $big_member_post_obj->post_title ?>">
         </div>
         <div class="team-member__content">
@@ -47,7 +48,7 @@ $big_member_position_obj = wp_get_post_terms($big_member_post_obj->ID, 'position
           ?>
           <div class="swiper-slide team__item team-member slider__item">
             <div class="team-member__image">
-              <img loading="lazy" src="<?= get_post_thumb(['w' => 285, 'h' => '285']) ?>"
+              <img loading="lazy" src="<?= get_post_thumb(['w' => 285, 'h' => '285', 'stub_url' => ct()->get_static_url() . '/img/photo-placeholder.png']) ?>"
                 class="team-member__image-image" width="285" height="285" alt="<?php the_title(); ?>">
             </div>
             <div class="team-member__content">

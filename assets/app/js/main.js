@@ -1237,7 +1237,6 @@ class GraphAccordion {
     this.event();
   }
   event() {
-    console.log('event!');
     if (this.accordion) {
       this.accordion.addEventListener('click', e => {
         this.accordion.classList.toggle('open');
@@ -1254,6 +1253,7 @@ class GraphAccordion {
     this.accordion.classList.add('is-open');
     this.control.setAttribute('aria-expanded', true);
     this.content.setAttribute('aria-hidden', false);
+    this.accordion.style.maxHeight = this.content.scrollHeight + this.control.scrollHeight + 'px';
     this.content.style.maxHeight = this.content.scrollHeight + 'px';
     this.options.isOpen(this);
   }
@@ -1262,6 +1262,7 @@ class GraphAccordion {
     this.control.setAttribute('aria-expanded', false);
     this.content.setAttribute('aria-hidden', true);
     this.content.style.maxHeight = null;
+    this.accordion.style.maxHeight = this.control.scrollHeight + 'px';
     this.options.isClose(this);
   }
 }
@@ -1798,15 +1799,14 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](seasonSlider, 
   \*******************************************/
 /***/ (() => {
 
-const steps = document.querySelectorAll('.step');
+const steps = document.querySelectorAll('.step--hover');
 if (steps.length) {
   steps.forEach(el => {
-    const trigger = el?.querySelector('.step__icon');
-    trigger?.addEventListener('click', e => {
-      steps.forEach(el => {
-        el.classList.remove('step--active');
-      });
+    el?.addEventListener('mouseover', e => {
       e.target.closest('.step').classList.add('step--active');
+    });
+    el?.addEventListener('mouseout', e => {
+      e.target.closest('.step').classList.remove('step--active');
     });
   });
 }

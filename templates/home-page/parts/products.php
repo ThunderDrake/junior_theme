@@ -22,7 +22,7 @@ $products = get_posts(
           <?php foreach($products as $post): ?>
           <?php setup_postdata($post); ?>
           <?php
-          $product_thumb_src = kama_thumb_src([ 'w' => 285, 'h' => 285, 'allow' => 'any', 'src' => get_the_post_thumbnail_url(get_the_ID(), 'full'), 'stub_url' => get_template_directory_uri() . '/assets/img/products/products-item-1.jpg' ], )
+          $product_thumb_src = kama_thumb_src([ 'w' => 285, 'h' => 285, 'allow' => 'any', 'src' => get_the_post_thumbnail_url(get_the_ID(), 'full'), 'stub_url' => ct()->get_static_url() . '/img/photo-placeholder.png' ], )
           ?>
           <div class="swiper-slide products__item products-item slider__item">
             <div class="products-item__image">

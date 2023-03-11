@@ -20,7 +20,7 @@
             <svg class="info__item-icon" width="40" height="40">
               <use xlink:href="<?= ct()->get_static_url() ?>/img/sprite.svg#info__item-icon-2"></use>
             </svg>
-            <a class="info__item-title btn-reset hover-gradient" href="<?= ct()->get_static_url() ?>/junior-contract.docx" download target="_blank"><span
+            <a class="info__item-title btn-reset hover-gradient" href="<?= ct()->get_static_url() ?>/junior-contract.pdf" download target="_blank"><span
                 data-text="Договор оказания услуг&nbsp;→">Договор оказания услуг →</span></a>
           </div>
         </div>

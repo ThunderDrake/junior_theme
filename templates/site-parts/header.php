@@ -19,6 +19,17 @@
   <link rel="preload" href="<?= ct()->get_static_url() ?>/fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<?= ct()->get_static_url() ?>/fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<?= ct()->get_static_url() ?>/fonts/AMERICANCAPTAINCYRILLIC.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?= site_url() ?>">
+  <meta property="og:title" content="Джуниор — футбольная школа для детей">
+  <meta property="og:image" content="<?= ct()->get_static_url() . '/img/seo-banner.jpeg' ?>">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?= site_url() ?>">
+  <meta property="twitter:title" content="Джуниор — футбольная школа для детей">
+  <meta property="twitter:image" content="<?= ct()->get_static_url() . '/img/seo-banner.jpeg' ?>">
+
   <?php wp_head() ?>
 </head>
 

@@ -247,7 +247,7 @@ function show_svg_in_media_library( $response ) {
  * @return string
  */
 function get_post_thumb( $args = [] ) {
-	$args = array_merge( [ 'allow' => 'any' ], $args );
+	$args = array_merge( [ 'allow' => 'any', 'stub_url' => ct()->get_static_url() . '/img/photo-placeholder.png', ], $args );
 
 	return kama_thumb_src( $args );
 }

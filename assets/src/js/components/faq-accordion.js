@@ -16,7 +16,6 @@ class GraphAccordion {
   }
 
   event() {
-    console.log('event!');
 
     if (this.accordion) {
       this.accordion.addEventListener('click', (e) => {
@@ -36,6 +35,7 @@ class GraphAccordion {
     this.accordion.classList.add('is-open');
     this.control.setAttribute('aria-expanded', true);
     this.content.setAttribute('aria-hidden', false);
+    this.accordion.style.maxHeight = this.content.scrollHeight + this.control.scrollHeight + 'px';
     this.content.style.maxHeight = this.content.scrollHeight + 'px';
     this.options.isOpen(this);
   }
@@ -45,6 +45,7 @@ class GraphAccordion {
     this.control.setAttribute('aria-expanded', false);
     this.content.setAttribute('aria-hidden', true);
     this.content.style.maxHeight = null;
+    this.accordion.style.maxHeight = this.control.scrollHeight + 'px';
     this.options.isClose(this);
   }
 }

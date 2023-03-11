@@ -1,13 +1,12 @@
-const steps = document.querySelectorAll('.step');
+const steps = document.querySelectorAll('.step--hover');
 
 if(steps.length) {
   steps.forEach(el => {
-    const trigger = el?.querySelector('.step__icon');
-    trigger?.addEventListener('click', (e) => {
-      steps.forEach(el => {
-        el.classList.remove('step--active')
-      });
+    el?.addEventListener('mouseover', (e) => {
       e.target.closest('.step').classList.add('step--active');
+    });
+    el?.addEventListener('mouseout', (e) => {
+      e.target.closest('.step').classList.remove('step--active');
     });
   })
 }

@@ -6,7 +6,7 @@
   <div class="steps__container container">
     <h2 class="steps__title h2-title">Этапы развития в клубе</h2>
     <div class="steps__grid">
-      <article class="steps__item step step--large">
+      <article class="steps__item step step--large step--hover">
         <div class="step__header">
           <div class="step__label">Этап  1</div>
           <div class="step__icon">
@@ -24,7 +24,7 @@
           <p>С трех лет дети уже начинают участвовать в наших внутренних турнирах-фестивалях. </p>
         </div>
       </article>
-      <article class="steps__item step step--small">
+      <article class="steps__item step step--small step--hover">
         <div class="step__header">
           <div class="step__label">Этап  2</div>
           <div class="step__icon">
@@ -41,7 +41,7 @@
             понимает, что футбол в их жизни становится N1.</p>
         </div>
       </article>
-      <article class="steps__item step step--small">
+      <article class="steps__item step step--small step--hover">
         <div class="step__header">
           <div class="step__label">Этап  3</div>
           <div class="step__icon">

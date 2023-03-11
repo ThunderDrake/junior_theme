@@ -21,7 +21,7 @@ $reviews = get_posts(
         <?php foreach($reviews as $post): ?>
         <?php setup_postdata($post); ?>
         <div class="swiper-slide reviews__item review-item slider__item" data-graph-path="<?php the_ID(); ?>">
-          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 248, 'h' => 400, 'allow' => 'any', 'src' => wp_get_attachment_image_url( get_field('review_image'), 'full' ) ], ) ?>"
+          <img loading="lazy" src="<?= kama_thumb_src([ 'w' => 248, 'h' => 400, 'allow' => 'any', 'src' => wp_get_attachment_image_url( get_field('review_image'), 'full' ), 'stub_url' => ct()->get_static_url() . '/img/photo-placeholder.png' ], ) ?>"
             class="review-item__image" width="248" height="400" alt="<?php the_title() ?>">
           <span class="review-item__name"><?php the_title() ?></span>
           <div class="review-item__hover">

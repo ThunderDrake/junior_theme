@@ -16,8 +16,8 @@ $revert = $args['revert'] ? 'form-section__container--revert' : '';
         </picture>
       <?php else: ?>
         <picture>
-          <source srcset="<?= ct()->get_static_url() ?>/img/form-section/form-section__image-2.webp" type="image/webp">
-          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/form-section/form-section__image-2.jpg" class="form-section__image-image"
+          <source srcset="<?= ct()->get_static_url() ?>/img/form-section/form-section__image-3.webp" type="image/webp">
+          <img loading="lazy" src="<?= ct()->get_static_url() ?>/img/form-section/form-section__image-3.jpg" class="form-section__image-image"
             width="660" height="660" alt="Дети тренируются на футбольном поле">
         </picture>
       <?php endif; ?>
