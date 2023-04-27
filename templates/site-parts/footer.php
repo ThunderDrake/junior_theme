@@ -98,10 +98,12 @@
       </div>
     </div>
   </div>
+  <a class="widget" href="#showchat">Напишите нам</a>
 </footer>
 
 <?php ct()->template('site-parts/footer-ymap.php') ?>
 </div>
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=8bacf1bd2f4f8fd4a81761fb609fde98" charset="UTF-8" async></script>
 <?php wp_footer() ?>
 </body>
 

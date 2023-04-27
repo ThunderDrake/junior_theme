@@ -29,6 +29,7 @@
   <meta property="twitter:url" content="<?= site_url() ?>">
   <meta property="twitter:title" content="Джуниор — футбольная школа для детей">
   <meta property="twitter:image" content="<?= ct()->get_static_url() . '/img/seo-banner.jpeg' ?>">
+  <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
 
   <?php wp_head() ?>
 </head>

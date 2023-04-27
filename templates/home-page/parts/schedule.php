@@ -201,6 +201,8 @@
           endforeach;?>
         </div>
       </div>
+
+      <div class="schedule__call-to">Наличие свободных мест уточняйте у нашего <a href="https://wa.me/89529119111">менеджера</a></div>
     </div>
   </div>
 </section>

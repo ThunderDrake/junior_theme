@@ -2971,7 +2971,7 @@ a {
 .footer__menu-link {
   display: block;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   line-height: 135%;
   letter-spacing: -0.02em;
@@ -3100,7 +3100,7 @@ a {
   }
 }
 .footer__additional a {
-  font-weight: 700;
+  font-weight: 600;
   color: inherit;
 }
 @media (max-width: 700px) {

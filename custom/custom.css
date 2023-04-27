@@ -1,0 +1,12 @@
+.schedule__call-to {
+  margin-top: 40px;
+  color: rgb(255 255 255 / 60%);
+}
+
+.schedule__call-to a {
+  color: rgb(255 255 255 / 80%);
+}
+
+.schedule__call-to a:hover {
+  text-decoration: underline;
+}
