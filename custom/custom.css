@@ -10,3 +10,7 @@
 .schedule__call-to a:hover {
   text-decoration: underline;
 }
+
+.why-us__subtitle {
+  line-height: 125%;
+}

@@ -10,7 +10,7 @@ if(!$items) {
 <section class="why-us" id="why-us">
   <div class="why-us__container container">
     <h2 class="why-us__title h2-title">Почему Джуниор</h2>
-    <p class="why-us__subtitle">Cамая крупная футбольная школа за Уралом</p>
+    <p class="why-us__subtitle">Cамая крупная футбольная школа за Уралом<br>Филиалы в г.Барнаул и г.Новосибирск</p>
     <div class="why-us__list">
       <?php foreach($items as $item): ?>
         <div class="why-us__item">
